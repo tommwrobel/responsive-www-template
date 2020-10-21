@@ -1,0 +1,28 @@
+$color-primary: #d43663;
+$color-light-primary: #ff4479;
+$color-dark-primary: #ad2c51;
+$color-secondary: #008DD5;
+$color-light-grey: rgb(209, 209, 209);
+$color-dark-grey: rgb(24, 24, 24);
+$color-dark: #373F51;
+
+.color {
+    &-primary {
+        color: $color-primary;
+    }
+    &-secondary {
+        color: $color-secondary;
+    }
+    &-white {
+        color: white;
+    }
+}
+
+.bg {
+    &-primary {
+        background-color: $color-primary;
+    }
+    &-secondary {
+        background-color: $color-primary;
+    }
+}
