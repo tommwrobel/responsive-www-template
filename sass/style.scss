@@ -1,11 +1,28 @@
 $size-unit: 5px;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+$font-stack: 'Poppins', Arial, Helvetica, sans-serif;
+$default-font-size: 16px;
+
+$page-width: 1200px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 960px;
+$breakpoint-large: 1200px;
+
+$color-primary: #d43663;
+$color-light-primary: #ff4479;
+$color-dark-primary: #ad2c51;
+$color-secondary: #008DD5;
+$color-light-grey: rgb(209, 209, 209);
+$color-dark-grey: rgb(24, 24, 24);
+$color-dark: #373F51;
+
 @import 'colors';
 @import 'reset';
 @import 'mixins';
-@import 'text';
 @import 'sizing';
 @import 'grid';
+@import 'text';
 
 body {
   font: 100% $font-stack;
