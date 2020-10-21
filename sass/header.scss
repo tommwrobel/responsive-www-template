@@ -14,6 +14,11 @@ header {
             justify-content: space-between;
         }
 
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
         li {
             list-style-type: none;
             display: inline;
@@ -27,6 +32,7 @@ header {
             padding: 5px 10px;
             margin-left: 20px;
             color: white;
+            cursor: pointer;
 
             &:hover {
                 color: $color-primary;

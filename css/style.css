@@ -107,6 +107,54 @@ table {
   margin: 25px; }
 .m-10 {
   margin: 50px; }
+.m-l-1 {
+  margin-left: 5px 0; }
+.m-l-2 {
+  margin-left: 10px; }
+.m-l-3 {
+  margin-left: 15px; }
+.m-l-4 {
+  margin-left: 20px; }
+.m-l-5 {
+  margin-left: 25px; }
+.m-l-10 {
+  margin-left: 50px; }
+.m-r-1 {
+  margin-right: 5px 0; }
+.m-r-2 {
+  margin-right: 10px; }
+.m-r-3 {
+  margin-right: 15px; }
+.m-r-4 {
+  margin-right: 20px; }
+.m-r-5 {
+  margin-right: 25px; }
+.m-r-10 {
+  margin-right: 50px; }
+.m-t-1 {
+  margin-top: 5px 0; }
+.m-t-2 {
+  margin-top: 10px; }
+.m-t-3 {
+  margin-top: 15px; }
+.m-t-4 {
+  margin-top: 20px; }
+.m-t-5 {
+  margin-top: 25px; }
+.m-t-10 {
+  margin-top: 50px; }
+.m-b-1 {
+  margin-bottom: 5px 0; }
+.m-b-2 {
+  margin-bottom: 10px; }
+.m-b-3 {
+  margin-bottom: 15px; }
+.m-b-4 {
+  margin-bottom: 20px; }
+.m-b-5 {
+  margin-bottom: 25px; }
+.m-b-10 {
+  margin-bottom: 50px; }
 .m-v-1 {
   margin: 5px 0; }
 .m-v-2 {
@@ -352,6 +400,9 @@ header .navbar {
   header .navbar .container {
     align-items: center;
     justify-content: space-between; }
+  header .navbar nav {
+    display: flex;
+    align-items: center; }
   header .navbar li {
     list-style-type: none;
     display: inline; }
@@ -362,7 +413,8 @@ header .navbar {
     text-transform: uppercase;
     padding: 5px 10px;
     margin-left: 20px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
     header .navbar .navbar-link:hover {
       color: #d43663; }
   header .navbar .logo * {
@@ -416,7 +468,6 @@ header .hero {
     .btn-primary:hover {
       background-color: #ff4479; }
   .btn-secondary {
-    padding: 14px 28px;
     border: solid 2px #d1d1d1;
     color: #d1d1d1; }
     .btn-secondary:hover {
