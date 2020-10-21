@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Tomasz Wróbel">
-    
+
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/68762cab38.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +14,7 @@
     <header>
         <div class="navbar">
             <div class="container">
-                <a href="#" onclick="toggleMenu();">
+                <a href="#">
                     <img class="logo" src="img/logo.svg" alt="logo" />
                 </a>
                 <nav>
@@ -34,8 +34,11 @@
                             </a>
                         </li>
                     </ul>
-                    <a class="btn-small btn-secondary m-l-5" href="#">sklep</a>
-                    <a class="navbar-link d-none d-md-block">
+                    <a class="btn-small btn-secondary m-l-5" href="#">
+                        <span class="d-md-none">Sklep</span>
+                        <span class="d-none d-md-block"><i class="fas fa-shopping-cart"></i></span>
+                    </a>
+                    <a class="navbar-link d-none d-md-block" onclick="toggleMenu();">
                         <i class="fas fa-bars"></i>
                     </a>
                 </nav>
@@ -45,9 +48,9 @@
             <div class="container">
                 <div class="content">
                     <h1 class="t-300 t-sm-160 color-white">Lorem ipsum dolor</h1>
-                    <p class="m-v-10 color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ullam modi deleniti quo veritatis odit ducimus fugit placeat voluptas rem assumenda quam, accusantium officia! Commodi provident delectus minima molestiae porro!</p>
-                    <a class="btn-primary m-h-1" href="#">Offer</a>
-                    <a class="btn-secondary m-h-1" href="#">Contact</a>
+                    <p class="m-v-10 color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Edit ducimus quam, accusantium officia! Commodi provident delectus minima molestiae porro!</p>
+                    <a class="btn-primary m-1" href="#">Offer</a>
+                    <a class="btn-secondary m-1" href="#">Contact</a>
                 </div>
             </div>
         </div>
