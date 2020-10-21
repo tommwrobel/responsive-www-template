@@ -420,7 +420,7 @@ header .navbar {
   header .navbar .logo * {
     fill: white; }
   header .navbar-sticky {
-    padding: 18px 0;
+    padding: 14px 0;
     background-color: black;
     color: #181818; }
   header .navbar .mobile-navigation {
@@ -428,8 +428,8 @@ header .navbar {
     position: fixed;
     justify-content: center;
     align-items: center;
-    left: 0;
-    top: -100vh;
+    left: -100vw;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -453,7 +453,7 @@ header .navbar {
       header .navbar .mobile-navigation .mobile-navbar-link:hover {
         color: #d43663; }
   header .navbar .mobile-navigation-active {
-    top: 0; }
+    left: 0; }
 header .hero {
   width: 100%;
   min-height: 100vh;
@@ -504,5 +504,21 @@ header .hero {
     .btn-secondary:hover {
       border-color: #d43663;
       color: #d43663; }
+
+footer {
+  width: 100%;
+  padding: 16px 0;
+  background-color: white;
+  color: #181818;
+  font-size: 0.9rem; }
+  footer .container {
+    align-items: center;
+    justify-content: space-between; }
+  footer li {
+    display: inline;
+    padding: 0 10px; }
+  footer a:hover {
+    color: #d43663;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

@@ -44,7 +44,7 @@ header {
         }
 
         &-sticky {
-            padding: 18px 0;
+            padding: 14px 0;
             background-color: black;
             color: $color-dark-grey;
         }
@@ -54,8 +54,8 @@ header {
             position: fixed;
             justify-content: center;
             align-items: center;
-            left: 0;
-            top: -100vh;
+            left: -100vw;
+            top: 0;
             width: 100vw;
             height: 100vh;
             background-color: black;
@@ -85,7 +85,7 @@ header {
         }
 
         .mobile-navigation-active {
-            top: 0;
+            left: 0;
         }
     }
 

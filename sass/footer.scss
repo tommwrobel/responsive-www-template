@@ -1,0 +1,24 @@
+footer {
+    width: 100%;
+    padding: 16px 0;
+    background-color: white;
+    color: $color-dark-grey;
+    font-size: 0.9rem;
+    
+    .container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li {
+        display: inline;
+        padding: 0 10px;
+    }
+
+    a:hover {
+        color: $color-primary;
+        text-decoration: underline;
+    }
+
+
+}
