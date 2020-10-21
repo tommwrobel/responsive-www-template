@@ -10,7 +10,7 @@
 	-moz-transition: $property $duration $easing;
 }
 
-@mixin transition( $duration) {
+@mixin transition($duration) {
 	transition: $duration;
 	-webkit-transition: $duration;
 	-moz-transition: $duration;

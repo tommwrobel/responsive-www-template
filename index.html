@@ -18,11 +18,10 @@
                     <img class="logo" src="img/logo.svg" alt="logo" />
                 </a>
                 <nav>
-                    <ul class="main-navigation d-md-none">
+                    <ul class="d-md-none">
                         <li><a class="navbar-link" href="#">Home</a></li>
                         <li><a class="navbar-link" href="#">Shop</a></li>
                         <li><a class="navbar-link" href="#">About Us</a></li>
-                        <li><a class="navbar-link" href="#">Contact</a></li>
                         <li>
                             <a class="navbar-link navbar-link-icon" href="#">
                                 <i class="fab fa-facebook-f"></i>
@@ -35,12 +34,24 @@
                         </li>
                     </ul>
                     <a class="btn-small btn-secondary m-l-5" href="#">
-                        <span class="d-md-none">Sklep</span>
-                        <span class="d-none d-md-block"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="d-sm-none">Sklep</span>
+                        <span class="d-none d-sm-block"><i class="fas fa-shopping-cart"></i></span>
                     </a>
                     <a class="navbar-link d-none d-md-block" onclick="toggleMenu();">
                         <i class="fas fa-bars"></i>
                     </a>
+
+                    <!--mobile navigation-->
+                    <div class="mobile-navigation d-none">
+                        <ul>
+                            <li><a class="mobile-navbar-link" href="#">Home</a></li>
+                            <li><a class="mobile-navbar-link" href="#">Shop</a></li>
+                            <li><a class="mobile-navbar-link" href="#">About Us</a></li>
+                            <li><a class="mobile-navbar-link" href="#">Facebook</a></li>
+                            <li><a class="mobile-navbar-link" href="#">Instagram</a></li>
+                            <li><a class="mobile-navbar-link t-300" href="#" onclick="toggleMenu();"><i class="fas fa-times"></i></a></li>     
+                        </ul>
+                    </div>
                 </nav>
             </div>    
         </div>
@@ -48,7 +59,7 @@
             <div class="container">
                 <div class="content">
                     <h1 class="t-300 t-sm-160 color-white">Lorem ipsum dolor</h1>
-                    <p class="m-v-10 color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Edit ducimus quam, accusantium officia! Commodi provident delectus minima molestiae porro!</p>
+                    <p class="m-v-5 color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Edit ducimus quam, accusantium officia! Commodi provident delectus minima molestiae porro!</p>
                     <a class="btn-primary m-1" href="#">Offer</a>
                     <a class="btn-secondary m-1" href="#">Contact</a>
                 </div>

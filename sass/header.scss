@@ -6,7 +6,7 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 100;;
+        z-index: 100;
         @include transition(0.5s);
 
         .container {
@@ -39,8 +39,6 @@ header {
             }
         }
 
-        
-
         .logo * {
             fill: white;
         }
@@ -49,6 +47,45 @@ header {
             padding: 18px 0;
             background-color: black;
             color: $color-dark-grey;
+        }
+
+        .mobile-navigation {
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top: -100vh;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            text-align: center;
+            @include transition(0.3s);
+
+            li {
+                display: block;
+                padding: 10px 0;
+            }
+
+            .mobile-navbar-link {
+                font-size: 1.6rem;
+                font-weight: 600;
+                letter-spacing: 0.1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                margin-left: 20px;
+                color: white;
+                cursor: pointer;
+    
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .mobile-navigation-active {
+            top: 0;
         }
     }
 
