@@ -25,6 +25,10 @@ section {
 .text-img-section {
     @extend section;
 
+    .img-container {
+        max-height: 350px;
+    }
+
     .text-content {
         h3 {
             margin-bottom: 20px;
