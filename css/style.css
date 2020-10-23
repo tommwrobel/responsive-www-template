@@ -17,7 +17,7 @@
 .bg-primary {
   background-color: #91d1dc; }
 .bg-secondary {
-  background-color: #91d1dc; }
+  background-color: #008DD5; }
 .bg-white {
   background-color: white; }
 .bg-black {
@@ -216,7 +216,7 @@ table {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
@@ -453,7 +453,7 @@ p {
   .t-sm-40 {
     font-size: 0.4rem; } }
 body {
-  font: 100% "Poppins", Arial, Helvetica, sans-serif;
+  font: normal 1rem "Poppins", Arial, Helvetica, sans-serif;
   color: #0c2a3b;
   font-size: 16px; }
 
@@ -548,7 +548,7 @@ header .hero {
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bolder;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   border-radius: 999px;
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;

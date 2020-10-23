@@ -4,7 +4,7 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: bolder;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     @include border-radius(999px);
     @include transition(0.2s);
 
@@ -12,7 +12,7 @@
         @extend .btn;
         padding: 10px 20px;
         font-size: 0.8rem;
-        letter-spacing: 0.10rem;
+        letter-spacing: 0.15rem;
     }
 
     &-big {
