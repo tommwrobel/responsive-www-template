@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 .color-primary {
-  color: #d43663; }
+  color: #91d1dc; }
 .color-secondary {
   color: #008DD5; }
 .color-white {
   color: white; }
 
 .bg-primary {
-  background-color: #d43663; }
+  background-color: #91d1dc; }
 .bg-secondary {
-  background-color: #d43663; }
+  background-color: #91d1dc; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -384,7 +384,7 @@ p {
     font-size: 0.4rem; } }
 body {
   font: 100% "Poppins", Arial, Helvetica, sans-serif;
-  color: #d43663;
+  color: #91d1dc;
   font-size: 16px; }
 
 header .navbar {
@@ -400,48 +400,16 @@ header .navbar {
   header .navbar .container {
     align-items: center;
     justify-content: space-between; }
+  header .navbar .logo {
+    height: 30px;
+    width: auto; }
   header .navbar nav {
     display: flex;
     align-items: center; }
-  header .navbar li {
-    list-style-type: none;
-    display: inline; }
-  header .navbar .navbar-link {
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    margin-left: 20px;
-    color: white;
-    cursor: pointer; }
-    header .navbar .navbar-link:hover {
-      color: #d43663; }
-  header .navbar .logo * {
-    fill: white; }
-  header .navbar-sticky {
-    padding: 14px 0;
-    background-color: black;
-    color: #181818; }
-  header .navbar .mobile-navigation {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    left: -100vw;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    text-align: center;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s; }
-    header .navbar .mobile-navigation li {
-      display: block;
-      padding: 10px 0; }
-    header .navbar .mobile-navigation .mobile-navbar-link {
-      font-size: 1.6rem;
+    header .navbar nav .nav-item {
+      list-style-type: none;
+      display: inline; }
+    header .navbar nav .nav-link {
       font-weight: 600;
       letter-spacing: 0.1rem;
       text-decoration: none;
@@ -450,10 +418,42 @@ header .navbar {
       margin-left: 20px;
       color: white;
       cursor: pointer; }
-      header .navbar .mobile-navigation .mobile-navbar-link:hover {
-        color: #d43663; }
-  header .navbar .mobile-navigation-active {
-    left: 0; }
+      header .navbar nav .nav-link:hover {
+        color: #91d1dc; }
+  header .navbar-sticky {
+    padding: 14px 0;
+    background-color: #0c2a3b;
+    color: #181818; }
+  header .navbar .mobile-navigation, header .navbar .mobile-navigation-active {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c2a3b;
+    text-align: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s; }
+    header .navbar .mobile-navigation li, header .navbar .mobile-navigation-active li {
+      display: block;
+      padding: 10px; }
+    header .navbar .mobile-navigation .mobile-navbar-link, header .navbar .mobile-navigation-active .mobile-navbar-link {
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      color: white;
+      cursor: pointer; }
+      header .navbar .mobile-navigation .mobile-navbar-link:hover, header .navbar .mobile-navigation-active .mobile-navbar-link:hover {
+        color: #91d1dc; }
+    header .navbar .mobile-navigation-active {
+      left: 0; }
 header .hero {
   width: 100%;
   min-height: 100vh;
@@ -473,7 +473,7 @@ header .hero {
       max-width: 800px; }
 
 .btn, .btn-small, .btn-big, .btn-primary, .btn-secondary {
-  padding: 16px 30px;
+  padding: 14px 30px;
   display: inline-block;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -494,16 +494,18 @@ header .hero {
     font-size: 1.1rem;
     letter-spacing: 0.15rem; }
   .btn-primary {
-    background-color: #d43663;
-    color: white; }
+    background-color: #91d1dc;
+    border: solid 2px #91d1dc;
+    color: #0c2a3b; }
     .btn-primary:hover {
-      background-color: #ff4479; }
+      background-color: #a2e8f4;
+      border-color: #a2e8f4; }
   .btn-secondary {
     border: solid 2px #d1d1d1;
     color: #d1d1d1; }
     .btn-secondary:hover {
-      border-color: #d43663;
-      color: #d43663; }
+      border-color: #91d1dc;
+      color: #91d1dc; }
 
 footer {
   width: 100%;
@@ -518,7 +520,7 @@ footer {
     display: inline;
     padding: 0 10px; }
   footer a:hover {
-    color: #d43663;
+    color: #91d1dc;
     text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

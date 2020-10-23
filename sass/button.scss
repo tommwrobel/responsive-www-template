@@ -1,5 +1,5 @@
 .btn {
-    padding: 16px 30px;
+    padding: 14px 30px;
     display: inline-block;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -25,10 +25,12 @@
     &-primary {
         @extend .btn;
         background-color: $color-primary;
-        color: white;
+        border: solid 2px $color-primary;
+        color: $color-dark;
 
         &:hover {
             background-color: $color-light-primary;
+            border-color: $color-light-primary;
         }
     }
 

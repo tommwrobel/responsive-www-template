@@ -14,61 +14,21 @@ header {
             justify-content: space-between;
         }
 
+        .logo {
+            height: 30px;
+            width: auto;
+        }
+
         nav {
             display: flex;
             align-items: center;
-        }
 
-        li {
-            list-style-type: none;
-            display: inline;
-        }
-
-        .navbar-link {
-            font-weight: 600;
-            letter-spacing: 0.1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 5px 10px;
-            margin-left: 20px;
-            color: white;
-            cursor: pointer;
-
-            &:hover {
-                color: $color-primary;
+            .nav-item {
+                list-style-type: none;
+                display: inline;
             }
-        }
-
-        .logo * {
-            fill: white;
-        }
-
-        &-sticky {
-            padding: 14px 0;
-            background-color: black;
-            color: $color-dark-grey;
-        }
-
-        .mobile-navigation {
-            display: flex;
-            position: fixed;
-            justify-content: center;
-            align-items: center;
-            left: -100vw;
-            top: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
-            text-align: center;
-            @include transition(0.3s);
-
-            li {
-                display: block;
-                padding: 10px 0;
-            }
-
-            .mobile-navbar-link {
-                font-size: 1.6rem;
+    
+            .nav-link {
                 font-weight: 600;
                 letter-spacing: 0.1rem;
                 text-decoration: none;
@@ -84,8 +44,49 @@ header {
             }
         }
 
-        .mobile-navigation-active {
-            left: 0;
+        &-sticky {
+            padding: 14px 0;
+            background-color: $color-dark;
+            color: $color-dark-grey;
+        }
+
+        .mobile-navigation {
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            left: -100vw;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: $color-dark;
+            text-align: center;
+            @include transition(0.3s);
+
+            li {
+                display: block;
+                padding: 10px;
+            }
+
+            .mobile-navbar-link {
+                font-size: 1.6rem;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                color: white;
+                cursor: pointer;
+    
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            &-active {
+                @extend .mobile-navigation;
+                left: 0;
+            }
         }
     }
 
