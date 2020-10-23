@@ -1,23 +1,19 @@
 .color {
-    &-primary {
-        color: $color-primary;
-    }
-    &-secondary {
-        color: $color-secondary;
-    }
-    &-white {
-        color: white;
-    }
+    &-primary { color: $color-primary; }
+    &-secondary { color: $color-secondary; }
+    &-white { color: white; }
+    &-black { color: black; }
+    &-light-grey { color: $color-light-grey; }
+    &-dark { color: $color-dark; }
+    &-dark-grey { color: $color-dark-grey; }
 }
 
 .bg {
-    &-primary {
-        background-color: $color-primary;
-    }
-    &-secondary {
-        background-color: $color-primary;
-    }
-    &-white {
-        background-color: white;
-    }
+    &-primary { background-color: $color-primary; }
+    &-secondary { background-color: $color-primary; }
+    &-white { background-color: white; }
+    &-black { background-color: black; }
+    &-light-grey { background-color: $color-light-grey; }
+    &-dark { background-color: $color-dark; }
+    &-dark-grey { background-color: $color-dark-grey; }
 }

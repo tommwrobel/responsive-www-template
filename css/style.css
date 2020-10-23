@@ -5,6 +5,14 @@
   color: #008DD5; }
 .color-white {
   color: white; }
+.color-black {
+  color: black; }
+.color-light-grey {
+  color: #f3f3f3; }
+.color-dark {
+  color: #0c2a3b; }
+.color-dark-grey {
+  color: #181818; }
 
 .bg-primary {
   background-color: #91d1dc; }
@@ -12,6 +20,14 @@
   background-color: #91d1dc; }
 .bg-white {
   background-color: white; }
+.bg-black {
+  background-color: black; }
+.bg-light-grey {
+  background-color: #f3f3f3; }
+.bg-dark {
+  background-color: #0c2a3b; }
+.bg-dark-grey {
+  background-color: #181818; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -27,7 +43,7 @@ a {
   text-decoration: none;
   color: inherit; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, .text-img-section, .news-section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,7 +52,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, .text-img-section, .news-section {
   display: block; }
 
 body {
@@ -200,14 +216,15 @@ table {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap; }
 
 .row {
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap; }
 
 .row::after {
@@ -524,7 +541,7 @@ header .hero {
     header .hero .container p {
       max-width: 800px; }
 
-.btn, .btn-small, .btn-big, .btn-primary, .btn-secondary {
+.btn, .btn-small, .btn-big, .btn-primary, .btn-secondary, .btn-secondary-light {
   padding: 14px 30px;
   display: inline-block;
   font-size: 0.9rem;
@@ -553,29 +570,50 @@ header .hero {
       background-color: #a2e8f4;
       border-color: #a2e8f4; }
   .btn-secondary {
-    border: solid 2px #d1d1d1;
-    color: #d1d1d1; }
+    border: solid 2px #0c2a3b;
+    color: #0c2a3b; }
     .btn-secondary:hover {
       border-color: #91d1dc;
       color: #91d1dc; }
+  .btn-secondary-light {
+    border: solid 2px #f3f3f3;
+    color: #f3f3f3; }
+    .btn-secondary-light:hover {
+      border-color: #91d1dc;
+      color: #91d1dc; }
 
-section {
-  padding: 50px 0; }
-  section .row {
+section, .text-img-section, .news-section {
+  padding: 60px 0; }
+  section .row:not(:last-of-type), .text-img-section .row:not(:last-of-type), .news-section .row:not(:last-of-type) {
     margin-bottom: 40px; }
-  section .img-container {
+  section .img-container, .text-img-section .img-container, .news-section .img-container {
     display: flex;
     justify-content: center;
-    align-items: center; }
-    section .img-container img {
+    align-items: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px; }
+    section .img-container img, .text-img-section .img-container img, .news-section .img-container img {
       object-fit: contain;
       max-width: 100%;
-      max-height: 100%; }
-  section .text-content h3 {
-    margin-bottom: 20px; }
-  section .text-content p {
-    line-height: 1.5;
-    margin-bottom: 10px; }
+      max-height: 100%;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px; }
+
+.text-img-section .text-content h3 {
+  margin-bottom: 20px; }
+.text-img-section .text-content p {
+  line-height: 1.5;
+  margin-bottom: 10px; }
+
+.news-section .text-content h3 {
+  margin: 15px 0;
+  font-size: 1.2rem; }
+.news-section .news {
+  margin-bottom: 40px; }
+  .news-section .news a {
+    margin-top: 15px; }
 
 footer {
   width: 100%;

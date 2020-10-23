@@ -36,6 +36,17 @@
 
     &-secondary {
         @extend .btn;
+        border: solid 2px $color-dark;
+        color: $color-dark;
+
+        &:hover {
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+    }
+
+    &-secondary-light {
+        @extend .btn;
         border: solid 2px $color-light-grey;
         color: $color-light-grey;
 
@@ -44,5 +55,4 @@
             color: $color-primary;
         }
     }
-
 }

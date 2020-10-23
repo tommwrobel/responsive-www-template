@@ -1,21 +1,29 @@
 section {
-    padding: 50px 0;
+    padding: 60px 0;
 
     .row {
-        margin-bottom: 40px;
+        &:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
     }
 
     .img-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        @include border-radius(8px);
     
         img {
             object-fit: contain;
             max-width: 100%;
             max-height: 100%;
+            @include border-radius(8px);
         }
     }
+}
+
+.text-img-section {
+    @extend section;
 
     .text-content {
         h3 {
@@ -24,6 +32,25 @@ section {
         p {
             line-height: 1.5;
             margin-bottom: 10px;
+        }
+    }
+}
+
+.news-section {
+    @extend section;
+
+    .text-content {
+        h3 {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    .news {
+        margin-bottom: 40px;
+
+        a {
+            margin-top: 15px;
         }
     }
 }
