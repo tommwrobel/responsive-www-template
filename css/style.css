@@ -1942,10 +1942,7 @@ body {
   font-size: 16px; }
 
 a.anchor {
-  display: block;
-  position: relative;
-  top: -150px;
-  visibility: hidden; }
+  padding-top: 40px; }
 
 header .navbar {
   width: 100%;
@@ -2149,9 +2146,6 @@ section, .text-img-section, .news-section, .contact-section {
 
 .contact-section .btn, .contact-section .btn-small, .contact-section .btn-big, .contact-section .btn-primary, .contact-section .btn-primary-light, .contact-section .btn-secondary, .contact-section .btn-secondary-light, .contact-section .btn-tertiary, .contact-section .btn-tertiary-light {
   letter-spacing: normal; }
-
-#contact:target, #offer:target {
-  padding-top: 100px; }
 
 footer {
   width: 100%;
