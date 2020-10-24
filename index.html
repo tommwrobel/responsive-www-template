@@ -20,41 +20,34 @@
                 </a>
 
                 <nav>
-                    <ul class="d-md-none">
+                    <ul class="display-md-none">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Strona główna</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">O nas</a>
+                            <a class="nav-link" href="#offer">Oferta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Produkty</a>
+                            <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navbar-link-icon" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn-small btn-secondary-light m-l-5 d-md-none" href="#">Sklep</a>
-                        </li>
-                        
+                            <a class="nav-link" href="#">En</a>
+                        </li> 
                     </ul>
 
-                    <a class="nav-link d-none d-md-block" onclick="toggleMenu();">
+                    <!--mobile navigation-->
+
+                    <a class="nav-link display-none display-md-block" onclick="toggleMenu();">
                         <i class="fas fa-bars"></i>
                     </a>
 
-                    <!--mobile navigation-->
-                    <div class="mobile-navigation d-none">
+                    <div class="mobile-navigation display-none">
                         <ul>
-                            <li><a class="mobile-navbar-link" href="#">Strona główna</a></li>
-                            <li><a class="mobile-navbar-link" href="#">O nas</a></li>
-                            <li><a class="mobile-navbar-link" href="#">Oferta</a></li>
-                            <li><a class="mobile-navbar-link" href="#">Kontakt</a></li>
-                            <li><a class="mobile-navbar-link" href="#">Facebook</a></li>
-                            <li><a class="mobile-navbar-link" href="#">Facebook</a></li>
-                            <li><a class="mobile-navbar-link t-300" href="#" onclick="toggleMenu();"><i class="fas fa-times"></i></a></li>     
+                            <li><a class="mobile-navbar-link" href="#" onclick="toggleMenu();">Strona główna</a></li>
+                            <li><a class="mobile-navbar-link" href="#offer" onclick="toggleMenu();">Oferta</a></li>
+                            <li><a class="mobile-navbar-link" href="#" onclick="toggleMenu();">Kontakt</a></li>
+                            <li><a class="mobile-navbar-link" href="#" onclick="toggleMenu();">English version</a></li>
+                            <li><a class="mobile-navbar-link t-300" onclick="toggleMenu();"><i class="fas fa-times"></i></a></li>     
                         </ul>
                     </div>
                 </nav>
@@ -62,28 +55,31 @@
         </div>
         <div class="hero">
             <div class="container">
-                <div class="content">
-                    <h1 class="t-300 t-sm-160 color-white">Lorem ipsum dolor</h1>
-                    <p class="m-v-5 color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Edit ducimus quam, accusantium officia! Commodi provident delectus minima molestiae porro!</p>
-                    <a class="btn-primary m-1" href="#">Oferta</a>
-                    <a class="btn-secondary-light m-1" href="#">Kontakt</a>
-                </div>
+                <div class="row justify-content-center">
+                    <h1 class="t-300 t-sm-160 col-12 color-white">Lorem ipsum dolor</h1>
+                    <p class="m-v-5 col-8 col-md-12 color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Edit ducimus quam, accusantium officia! Commodi provident delectus minima molestiae porro!</p>
+                    <div class="col-12">
+                        <a class="btn-primary m-1" href="#offer">Oferta</a>
+                        <a class="btn-secondary-light m-1" href="#contact">Kontakt</a>
+                    </div>
+                </div> 
             </div>
         </div>
     </header>
 
     <main>
+        <a name="offer"/>
         <section class="text-img-section bg-white">
             <div class="container">
 
                 <!--right-content-->
-                <div class="row a-center">
+                <div class="row align-items-center">
                     <div class="img-container col-6 col-md-4 col-sm-12 order-sm-2">
                         <img src="img/social.png" alt="example" />
                     </div>
                     <div class="text-content col-6 col-md-8 col-sm-12 order-sm-1">
                         <div>
-                            <h3 class="t-200">Reklama w Social Media</h3>
+                            <h3>Reklama w Social Media</h3>
                             <p>Chcesz zapewnić swojej marce rozpoznawalność, zwiększyć sprzedaż, liczbę instalacji? A może interesuje Cię określony target tak aby Twoje reklamy trafiły do wskazanej przez Ciebie grupy odbiorów?</p>
                             <p>Docieraj do nowych klientów dzięki reklamom na facebooku, twitterze i instagramie!</p>
                         </div>
@@ -91,10 +87,10 @@
                 </div>
 
                 <!--left-content-->
-                <div class="row a-center">
-                    <div class="text-content col-6 col-md-8 col-sm-12 d-flex order-sm-1">
+                <div class="row align-items-center">
+                    <div class="text-content col-6 col-md-8 col-sm-12 order-sm-1">
                         <div>
-                            <h3 class="t-200">Kampanie mailingowe</h3>
+                            <h3>Kampanie mailingowe</h3>
                             <p>Współpracujemy z największymi właścicielami baz mailingowych w Polsce i na świecie. Korzystając z naszego wieloletniego doświadczenia w dziedzinie email marketingu, zoptymalizujemy Państwa kampanie pod kątem doboru bazy, targetu, modelu rozliczeń (CPM, CPC, CPL, CPS), tak aby uzyskali Państwo ponadprzeciętne wyniki i rekordowe zyski.</p>
                             <p>Dzięki nam Państwa oferta może dotrzeć do ponad 500 milionów potencjalnych klientów z całego świata!</p>
                         </div>
@@ -105,13 +101,13 @@
                 </div>
 
                 <!--right-content-->
-                <div class="row a-center">
+                <div class="row align-items-center">
                     <div class="img-container col-6 col-md-4 col-sm-12 order-sm-2">
                         <img src="img/banner.png" alt="example" />
                     </div>
                     <div class="text-content col-6 col-md-8 col-sm-12 order-sm-1">
                         <div>
-                            <h3 class="t-200">Kampanie banerowe</h3>
+                            <h3>Kampanie banerowe</h3>
                             <p>Banery na dowolnym serwisie internetowym w Polsce i na świecie? Artykuły sponsorowane emitowane na największych serwisach internetowych? Kampanie w sieciach RTB targetowane nawet na poszczególną dzielnicę danego miasta? Reklama w kanałach mobilnych? Z nami to możliwe!</p>
                             <p>Wykorzystując nasze wieloletnie doświadczenie, doradzimy jaką formę reklamy wybrać aby przyniosła najlepsze efekty. Każdą kampanię "uszyjemy"na miarę Państwa potrzeb!</p>
                         </div>
@@ -119,10 +115,10 @@
                 </div>
 
                 <!--left-content-->
-                <div class="row a-center">
-                    <div class="text-content col-6 col-md-8 col-sm-12 d-flex order-sm-1">
+                <div class="row align-items-center">
+                    <div class="text-content col-6 col-md-8 col-sm-12 order-sm-1">
                         <div>
-                            <h3 class="t-200">Generowanie leadów</h3>
+                            <h3>Generowanie leadów</h3>
                             <p>Brakuje Państwu klientów? Potrzebujecie kontaktów do klientów zainteresowanych Państwa ofertą?</p>
                             <p>Możemy generować dla Państwa duże ilości wysokojakościowych leadów. Stosujemy sprawdzone metody (korejestracje, lifestyle, kampanie mailingowe w modelu CPL) i współpracujemy z najlepszymi, sprawdzonymi partnerami.</p>
                         </div>
@@ -133,13 +129,13 @@
                 </div>
 
                 <!--right-content-->
-                <div class="row a-center">
+                <div class="row align-items-center">
                     <div class="img-container col-6 col-md-4 col-sm-12 order-sm-2">
                         <img src="img/crowd.png" alt="example" />
                     </div>
                     <div class="text-content col-6 col-md-8 col-sm-12 order-sm-1">
                         <div>
-                            <h3 class="t-200">Crowdfunding</h3>
+                            <h3>Crowdfunding</h3>
                             <p>Masz świetny pomysł na biznes? Jesteś wynalazcą, wizjonerem? Stworzyłeś niesamowity produkt a teraz nie do końca wiesz jak zebrać pieniądze na rozruch biznesu? Crowdfunding jest właśnie dla Ciebie!</p>
                             <p>A my pomożemy Ci przygotować kampanię na największych crowdfundingowych portalach - www,kickstarter.com, www.indiegogo.com.</p>
                         </div>
@@ -149,7 +145,21 @@
             </div>
         </section>
 
-        <section class="news-section bg-light-grey">
+        <a name="contact" />
+        <section class="contact-section bg-dark">
+            <div class="container">
+                <div class="row section-title">
+                    <h2 class="col-12 color-white">Kontakt</h2>
+                    <p class="color-light-grey col-4 col-md-12">Lorem, ipsum dolor sit amet conseLorem, ipsum dolor sit amet conseLorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem veritatis. <strong>Zapraszam do kontaktu!</strong></p>
+                </div>
+                <div class="row justify-content-center">
+                    <a class="btn-primary m-2" href=""><i class="fas fa-phone"></i>&nbsp;&nbsp;+48 567 56 56</a>
+                    <a class="btn-primary m-2" href=""><i class="fas fa-envelope"></i>&nbsp;&nbsp;bartosz.wieraszka@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="news-section bg-light-grey">
             <div class="container">
                 <div class="row">
 
@@ -160,7 +170,7 @@
                         <div class="text-content col-6 col-sm-12">
                             <h3>Lorem ipsum dolor</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elitlor sit amet conse...</p>
-                            <a class="btn-secondary btn-small" href="#">Więcej</a>
+                            <a class="btn-tertiary" href="#">Czytaj więcej...</a>
                         </div>
                     </div>
 
@@ -171,7 +181,7 @@
                         <div class="text-content col-6 col-sm-12">
                             <h3>Lorem ipsum dolor</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elitlor sit amet conse...</p>
-                            <a class="btn-secondary btn-small" href="#">Więcej</a>
+                            <a class="btn-tertiary" href="#">Czytaj więcej...</a>
                         </div>
                     </div>
 
@@ -182,7 +192,7 @@
                         <div class="text-content col-6 col-sm-12">
                             <h3>Lorem ipsum dolor</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elitlor sit amet conse...</p>
-                            <a class="btn-secondary btn-small" href="#">Więcej</a>
+                            <a class="btn-tertiary" href="#">Czytaj więcej...</a>
                         </div>
                     </div>
 
@@ -190,43 +200,6 @@
 
                 <a class="btn-primary" href="#">Więcej aktualności</a>
             </div>
-        </section>
-           <!-- <div class="container">
-                <div class="row">
-                    <div class="col-4 col-md-12 news-container" style="height: 60px; background-color: green;">
-                        <img src="img/example.png" alt="example" />
-                        <h3>News title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure quae... <a href="#">Czytaj więcej</a></p>
-                    </div>
-                    <div class="col-4 col-md-12 news-container" style="height: 60px; background-color: green;">
-                        <img src="img/example.png" alt="example" />
-                        <h3>News title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure quae... <a href="#">Czytaj więcej</a></p>
-                    </div>
-                    <div class="col-4 col-md-12 news-container" style="height: 60px; background-color: green;">
-                        <img src="img/example.png" alt="example" />
-                        <h3>News title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure quae... <a href="#">Czytaj więcej</a></p>
-                    </div>
-                </div>
-                
-                <a class="btn-primary" href="#">Więcej aktualności</a>
-            </div>
-        </section>
-
-        <section class="news">
-            <div>
-                <img src="img/example.png" alt="example" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minima aperiam...</p>
-                <a class="btn btn-small btn-primary" href="#">Read more...</a>
-            </div>
-        </section>
-
-        <section class="description-img">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti tempora doloribus perspiciatis quisquam est architecto neque, adipisci sit! Doloremque deserunt alias dolores voluptate quos excepturi neque, tenetur deleniti assumenda at?
-            </p>
-            <img src="img/example.png" alt="example" />
         </section>-->
     </main>
 
@@ -234,11 +207,10 @@
         <div class="container">
             <span>&copy 2020 by Company.com</span>
             <nav>
-                <ul class="d-md-none">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Offer</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="display-md-none">
+                    <li><a href="#">Strona główna</a></li>
+                    <li><a href="#">Oferta</a></li>
+                    <li><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
             <a class="link-top" href="#">

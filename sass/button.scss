@@ -1,23 +1,24 @@
 .btn {
-    padding: 14px 30px;
+    padding:$button-padding-v $button-padding-h;
     display: inline-block;
     font-size: 0.9rem;
     text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing: 0.2rem;
-    @include border-radius(999px);
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    border: solid $button-border-size transparent;
+    @include border-radius($button-border-radius);
     @include transition(0.2s);
 
     &-small {
         @extend .btn;
-        padding: 10px 20px;
+        padding: 0.8*$button-padding-v 0.8*$button-padding-h;
         font-size: 0.8rem;
         letter-spacing: 0.15rem;
     }
 
     &-big {
         @extend .btn;
-        padding: 22px 40px;
+        padding:1.2*$button-padding-v 1.2*$button-padding-h;
         font-size: 1.1rem;
         letter-spacing: 0.15rem;
     }
@@ -25,18 +26,28 @@
     &-primary {
         @extend .btn;
         background-color: $color-primary;
-        border: solid 2px $color-primary;
         color: $color-dark;
 
         &:hover {
-            background-color: $color-light-primary;
-            border-color: $color-light-primary;
+            background-color: lighten($color-primary, 10%);;
+        }
+    }
+
+    &-primary-light {
+        @extend .btn;
+        background-color: $color-light-grey;
+        border-color: $color-light-grey;
+        color: $color-dark;
+
+        &:hover {
+            background-color: white;
+            border-color: white;
         }
     }
 
     &-secondary {
         @extend .btn;
-        border: solid 2px $color-dark;
+        border-color: $color-dark;
         color: $color-dark;
 
         &:hover {
@@ -47,7 +58,36 @@
 
     &-secondary-light {
         @extend .btn;
-        border: solid 2px $color-light-grey;
+        border-color: $color-light-grey;
+        color: $color-light-grey;
+
+        &:hover {
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+    }
+
+    &-tertiary {
+        @extend .btn;
+        @include border-radius(0);
+        padding: 0;
+        font-weight: normal;
+        letter-spacing: 0.1rem;
+        border: none;
+        color: $color-dark;
+
+        &:hover {
+            border-color: $color-primary;
+            color: $color-dark-primary;
+        }
+    }
+
+    &-tertiary-light {
+        @extend .btn;
+        @include border-radius(0);
+        padding: 0;
+        letter-spacing: normal;
+        border: none;
         color: $color-light-grey;
 
         &:hover {

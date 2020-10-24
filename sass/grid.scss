@@ -1,5 +1,5 @@
 .container {
-    max-width: $page-width;
+    max-width: $container-width;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -13,6 +13,11 @@
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
+    padding-bottom: $row-gap;
+
+    &:not(:last-of-type) {
+        padding-bottom: $row-gap;
+    }
 }
 
 .row::after {
@@ -24,46 +29,47 @@
 .col {
     width: 100%; 
     float: left;
-    padding: 0 15px;
+    padding: 0 $column-gap/2;
     box-sizing: border-box;
 
-    &-2 { @extend .col; flex-basis: 16.66%; }
-    &-3 { @extend .col; flex-basis: 25%; }
-    &-4 { @extend .col; flex-basis: 33.33%; }
-    &-6 { @extend .col; flex-basis: 50%; }
-    &-8 { @extend .col; flex-basis: 66.66%; }
-    &-12 {@extend .col; flex-basis: 100% }
+    @for $i from 1 through $column-count {
+        &-#{$i} {
+            @extend .col;
+            flex-basis: 100%/$column-count * $i;
+        }
+    }
 }
 
-.d {
-    &-none { display: none; }
-    &-inline { display: inline; }
-    &-inline-block { display: inline-block; }
-    &-block { display: block; }
-    &-table-cell { display: table-cell; }
-    &-table-row { display: table-row; }
-    &-flex { display: flex; }
-    &-inline-flex { display: inline-flex; }
+$displays: none, inline, inline-block, block, table-cell, table-row, flex, inline-flex;
+@each $display in $displays {
+  .display-#{$display} { display: $display; }
 }
 
-.f {
+.float {
     &-left { float: left; }   
     &-right { float: right; }   
 }
 
-.a {
+.align-items {
     &-center {
         height: 100%;
         align-items: center;
     }
 }
 
-.order {
-    &-1 { order: 1; }
-    &-2 { order: 2; }
-    &-3 { order: 3; }
-    &-4 { order: 4; }
-    &-5 { order: 5; }
+$justifys: center, start, end, flex-start, flex-end, left, right;
+@each $justify in $justifys {
+  .justify-content-#{$justify} { justify-content: $justify; }
+}
+
+@for $i from 1 through $column-count - 1 {
+    .offset-#{$i} {
+        margin-left: 100%/$column-count * $i;
+    }
+}
+
+@for $i from 1 through $column-count {
+    .order-#{$i} { order: $i; }
 }
 
 @media (max-width: $breakpoint-medium) {
@@ -72,32 +78,27 @@
         float: left;
         padding: 0 15px;
         box-sizing: border-box;
-    
-        &-2 { @extend .col-md; flex-basis: 16.66%; }
-        &-3 { @extend .col-md; flex-basis: 25%; }
-        &-4 { @extend .col-md; flex-basis: 33.33%; }
-        &-6 { @extend .col-md; flex-basis: 50%; }
-        &-8 { @extend .col-md; flex-basis: 66.66%; }
-        &-12 { @extend .col-md; flex-basis: 100% }
+
+        @for $i from 1 through $column-count {
+            &-#{$i} {
+                @extend .col-md;
+                flex-basis: 100%/$column-count * $i;
+            }
+        }
     }
 
-    .d-md {
-        &-none { display: none; }
-        &-inline { display: inline; }
-        &-inline-block { display: inline-block; }
-        &-block { display: block; }
-        &-table-cell { display: table-cell; }
-        &-table-row { display: table-row; }
-        &-flex { display: flex; }
-        &-inline-flex { display: inline-flex; }
+    @for $i from 1 through$column-count - 1 {
+        .offset-md-#{$i} {
+            margin-left: 100%/$column-count * $i;
+        }
     }
 
-    .order-md {
-        &-1 { order: 1; }
-        &-2 { order: 2; }
-        &-3 { order: 3; }
-        &-4 { order: 4; }
-        &-5 { order: 5; }
+    @each $display in $displays {
+        .display-md-#{$display} { display: $display; }
+    }
+
+    @for $i from 1 through $column-count {
+        .order-md-#{$i} { order: $i; }
     }
 }
 
@@ -107,31 +108,26 @@
         float: left;
         padding: 0 15px;
         box-sizing: border-box;
-    
-        &-2 { @extend .col-sm; flex-basis: 16.66%; }
-        &-3 { @extend .col-sm; flex-basis: 25%; }
-        &-4 { @extend .col-sm; flex-basis: 33.33%; }
-        &-6 { @extend .col-sm; flex-basis: 50%; }
-        &-8 { @extend .col-sm; flex-basis: 66.66%; }
-        &-12 { @extend .col-sm; flex-basis: 100% }
+
+        @for $i from 1 through $column-count {
+            &-#{$i} {
+                @extend .col-sm;
+                flex-basis: 100%/$column-count * $i;
+            }
+        }
     }
 
-    .d-sm {
-        &-none { display: none; }
-        &-inline { display: inline; }
-        &-inline-block { display: inline-block; }
-        &-block { display: block; }
-        &-table-cell { display: table-cell; }
-        &-table-row { display: table-row; }
-        &-flex { display: flex; }
-        &-inline-flex { display: inline-flex; }
+    @for $i from 1 through $column-count - 1 {
+        .offset-sm-#{$i} {
+            margin-left: 100%/$column-count * $i;
+        }
     }
 
-    .order-sm {
-        &-1 { order: 1; }
-        &-2 { order: 2; }
-        &-3 { order: 3; }
-        &-4 { order: 4; }
-        &-5 { order: 5; }
+    @each $display in $displays {
+        .display-sm-#{$display} { display: $display; }
+    }
+
+    @for $i from 1 through $column-count {
+        .order-sm-#{$i} { order: $i; }
     }
 }

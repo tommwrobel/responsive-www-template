@@ -1,21 +1,31 @@
-$size-unit: 5px;
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 $font-stack: 'Poppins', Arial, Helvetica, sans-serif;
 $default-font-size: 16px;
 
-$page-width: 1200px;
+$container-width: 1200px;
+$column-count: 12;
+$column-gap: 30px;
+$row-gap: 30px;
+
 $breakpoint-small: 768px;
 $breakpoint-medium: 960px;
 $breakpoint-large: 1200px;
 
+$size-unit: 5px;
+
 $color-primary: #91d1dc;
 $color-light-primary: #a2e8f4;
-$color-dark-primary: #74bdca;
+$color-dark-primary: #57b5c5;
 $color-secondary: #008DD5;
 $color-light-grey: #f3f3f3;
 $color-dark-grey: rgb(24, 24, 24);
 $color-dark: #0c2a3b;
+
+$button-border-radius: 4px;
+$button-border-size: 1px;
+$button-padding-v: 12px;
+$button-padding-h: 30px;
 
 @import 'colors';
 @import 'reset';
@@ -23,6 +33,10 @@ $color-dark: #0c2a3b;
 @import 'sizing';
 @import 'grid';
 @import 'text';
+
+html {   
+  scroll-behavior: smooth;
+}
 
 body {
   font: normal 1rem $font-stack;
@@ -32,5 +46,5 @@ body {
 
 @import 'header';
 @import 'button';
-@import 'main';
+@import 'section';
 @import 'footer';
