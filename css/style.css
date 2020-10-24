@@ -1357,7 +1357,6 @@ table {
   clear: both; }
 
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-  width: 100%;
   float: left;
   padding: 0 15px;
   box-sizing: border-box; }
@@ -2135,14 +2134,10 @@ section, .text-img-section, .news-section, .contact-section {
 
 .section-title {
   justify-content: center;
-  flex-direction: column;
   text-align: center; }
   .section-title h2 {
     font-size: 2.5rem;
     margin-bottom: 20px; }
-  .section-title p {
-    font-size: 1.2rem;
-    line-height: 1.8rem; }
 
 .contact-section .btn, .contact-section .btn-small, .contact-section .btn-big, .contact-section .btn-primary, .contact-section .btn-primary-light, .contact-section .btn-secondary, .contact-section .btn-secondary-light, .contact-section .btn-tertiary, .contact-section .btn-tertiary-light {
   letter-spacing: normal; }
