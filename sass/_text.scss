@@ -1,0 +1,82 @@
+h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-bottom: $size-unit*4;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-bottom: $size-unit*3;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $size-unit*3;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+* > p:not(:last-child) {
+    margin-bottom: $size-unit*3;
+}
+
+p a {
+    text-decoration: underline;
+    color: $color-primary;
+
+    &:hover {
+        color: $color-dark-primary;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+@for $i from 3 through 20 {
+    .t-#{$i*2}0 {
+        font-size: $i * 0.2rem;
+        line-height: $i * 0.2rem * 1.5;
+    }
+
+    .tt-#{$i*2}0 {
+        font-size: $i * 0.2rem;
+        line-height: $i * 0.2rem * 1.2;
+    }
+}
+
+@media (max-width: $breakpoint-medium) {
+    @for $i from 3 through 20 {
+        .t-md-#{$i*2}0 {
+            font-size: $i * 0.2rem;
+            line-height: $i * 0.2rem * 1.5;
+        }
+
+        .tt-md-#{$i*2}0 {
+            font-size: $i * 0.2rem;
+            line-height: $i * 0.2rem * 1.2;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    @for $i from 3 through 20 {
+        .t-sm-#{$i*2}0 {
+            font-size: $i * 0.2rem;
+            line-height: $i * 0.2rem * 1.5;
+        }
+
+        .tt-sm-#{$i*2}0 {
+            font-size: $i * 0.2rem;
+            line-height: $i * 0.2rem * 1.2;
+        }
+    }
+}

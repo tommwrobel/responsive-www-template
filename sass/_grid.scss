@@ -1,0 +1,255 @@
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $column-gap;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -$column-gap/2;
+    margin-right: -$column-gap/2;
+}
+
+.col {
+    padding: 0 $column-gap/2;
+    box-sizing: border-box;
+    flex-grow: 1;
+
+    @for $i from 1 through $column-count {
+        &-#{$i} {
+            @extend .col;
+            flex-grow: unset;
+            flex-basis: 100%/$column-count * $i;
+            max-width: 100%/$column-count * $i;
+        }
+    }
+}
+
+.fixed {
+    &-top {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+}
+
+.float {
+    &-left { float: left; }
+    &-right { float: right; }
+}
+
+.flex-direction {
+    &-row {
+        flex-direction: row;
+    }
+    &-column {
+        flex-direction: column;
+    }
+}
+
+$displays:
+none,
+inline,
+inline-block,
+block,
+table-cell,
+table-row,
+flex,
+inline-flex;
+@each $display in $displays {
+    .display-#{$display} {
+        display: $display !important;
+    }
+}
+
+$wraps:
+wrap-reverse,
+wrap,
+nowrap;
+@each $wrap in $wraps {
+    .flex-#{$wrap} {
+        flex-wrap: $wrap !important;
+    }
+}
+
+$aligns:
+stretch,
+baseline,
+flex-end,
+flex-start,
+center;
+@each $align in $aligns {
+    .align-items-#{$align} {
+        align-items: $align !important;
+    }
+}
+
+$justifys: center,
+start,
+end,
+flex-start,
+flex-end,
+space-between,
+space-around,
+space-evenly,
+start,
+end,
+left,
+right;
+@each $justify in $justifys {
+    .justify-content-#{$justify} {
+        justify-content: $justify;
+    }
+}
+
+$flex-directions: row,
+row-reverse,
+column,
+column-reverse;
+@each $flex-direction in $flex-directions {
+    .flex-direction-#{$flex-direction} {
+        flex-direction: $flex-direction;
+    }
+}
+
+@for $i from 1 through $column-count - 1 {
+    .offset-#{$i} {
+        margin-left: 100%/$column-count * $i;
+    }
+}
+
+@for $i from 1 through $column-count {
+    .order-#{$i} {
+        order: $i;
+    }
+}
+
+@media (max-width: $breakpoint-large) {
+    .col-lg {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        @for $i from 1 through $column-count {
+            &-#{$i} {
+                @extend .col-lg;
+                flex-basis: 100%/$column-count * $i;
+                max-width: 100%/$column-count * $i;
+            }
+        }
+    }
+
+    @each $justify in $justifys {
+        .justify-content-lg-#{$justify} {
+            justify-content: $justify !important;
+        }
+    }
+
+    @for $i from 1 through$column-count - 1 {
+        .offset-lg-#{$i} {
+            margin-left: 100%/$column-count * $i;
+        }
+    }
+
+    @each $display in $displays {
+        .display-lg-#{$display} {
+            display: $display !important;
+        }
+    }
+
+    @for $i from 1 through $column-count {
+        .order-lg-#{$i} {
+            order: $i;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-medium) {
+    .col-md {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        @for $i from 1 through $column-count {
+            &-#{$i} {
+                @extend .col-md;
+                flex-basis: 100%/$column-count * $i;
+                max-width: 100%/$column-count * $i;
+            }
+        }
+    }
+
+    @each $justify in $justifys {
+        .justify-content-md-#{$justify} {
+            justify-content: $justify !important;
+        }
+    }
+
+    @for $i from 1 through$column-count - 1 {
+        .offset-md-#{$i} {
+            margin-left: 100%/$column-count * $i;
+        }
+    }
+
+    @each $display in $displays {
+        .display-md-#{$display} {
+            display: $display !important;
+        }
+    }
+
+    @for $i from 1 through $column-count {
+        .order-md-#{$i} {
+            order: $i;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .col-sm {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        @for $i from 1 through $column-count {
+            &-#{$i} {
+                @extend .col-sm;
+                flex-basis: 100%/$column-count * $i;
+                max-width: 100%/$column-count * $i;
+            }
+        }
+    }
+
+    @each $justify in $justifys {
+        .justify-content-sm-#{$justify} {
+            justify-content: $justify !important;
+        }
+    }
+
+    @for $i from 1 through $column-count - 1 {
+        .offset-sm-#{$i} {
+            margin-left: 100%/$column-count * $i;
+        }
+    }
+
+    @each $display in $displays {
+        .display-sm-#{$display} {
+            display: $display !important;
+        }
+    }
+
+    @for $i from 1 through $column-count {
+        .order-sm-#{$i} {
+            order: $i;
+        }
+    }
+}

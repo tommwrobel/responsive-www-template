@@ -1,0 +1,73 @@
+h1, h2, h3, h4 {
+    color: $color-secondary;
+}
+
+.section-offer {
+    .row {
+        margin-bottom: $size-unit*6;
+
+        .txt-img:nth-child(odd) {
+            background-color: $color-light-grey;
+        }
+    }
+}
+
+hr {
+    border: solid 1px $color-light-grey;
+}
+
+.offer-tiles {
+
+    .offer-tile {
+        height: 200px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-primary;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: lighten($color-primary, 6%);
+
+            h2 {
+                color: $color-secondary;
+            }
+            
+            .tile-number {
+                display: block;
+                position: absolute;
+                top: -80%;
+            }
+        }
+
+        .tile-number {
+            font-size: 32rem;
+            font-weight: 600;
+            color: $color-primary;
+            display: block;
+            position: absolute;
+            top: 100%;
+            z-index: 1;
+        }
+
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: 800;
+            text-align: center;
+            color: darken($color-primary, 24%);
+            margin: 0;
+            z-index: 2;
+        }
+    }
+
+    @media (max-width: $breakpoint-small) {
+        .offer-tile {
+            height: 100px;
+        }
+    }
+}

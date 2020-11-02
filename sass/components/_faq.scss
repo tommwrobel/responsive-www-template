@@ -1,0 +1,53 @@
+$faq-title-background: lighten($color-light-grey, 5%);
+$faq-border-size: 1px;
+$faq-border-color: $color-light-grey;
+$faq-border-radius: $global-border-radius;
+
+.faq {
+    width: 100%;
+    border: solid $faq-border-size $faq-border-color;
+    @include border-radius($faq-border-radius);
+
+    .faq-title {
+        background-color: $faq-title-background;
+        cursor: pointer;
+        padding: $column-gap/2;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+
+        :first-of-type {
+            @include border-radii($faq-border-radius, $faq-border-radius, 0, 0);
+        }
+
+        :last-of-type {
+            @include border-radii(0, 0, $faq-border-radius, $faq-border-radius);
+        }
+
+        &:hover {
+            color: $color-primary;
+            background-color: darken($faq-title-background, 5%);
+        }
+
+        .faq_arrow {
+            max-height: 1rem;
+            margin-left: 1rem;
+            @include transition(0.3s);
+        }
+
+        .faq-arrow-open {
+            transform: rotate(180deg);
+        }
+    }
+
+    .faq-content {
+        display: none;
+        @include transition(2s);
+        padding: $column-gap/2;
+        width: 100%;
+    }
+
+    .faq-content-open {
+        display: block;
+    }
+}

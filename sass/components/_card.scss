@@ -1,0 +1,123 @@
+$card-padding: $size-unit*3;
+$content-padding: 0;
+$card-border-radius: $global-border-radius;
+$card-border-size: 1px;
+$card-border-color: $color-light-grey;
+
+.product {
+    display: flex;
+}
+.card {
+    background-color: white;
+    border: solid $card-border-size $card-border-color;
+    padding: $card-padding;
+    display: flex;
+    flex-direction: column;
+    @include border-radius($card-border-radius);
+
+    & > *:not(:last-child) {
+        margin-bottom: $size-unit*3;
+    }
+
+    .card-img-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            @include border-radius($card-border-radius);
+        }
+
+        .badge-container {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+    
+            .badge {
+                display: inline-block;
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                color: white;
+                padding: 4px 6px;
+                margin-right: 4px;
+                margin-bottom: 2px;
+                border-radius: $card-border-radius;
+                background-color: $color-primary;
+    
+                &-primary {
+                    @extend .badge;
+                    background-color: $color-primary;
+                }
+    
+                &-secondary {
+                    @extend .badge;
+                    background-color: $color-secondary;
+                }
+    
+                &-red {
+                    @extend .badge;
+                    background-color: $color-red;
+                }
+    
+                &-yellow {
+                    @extend .badge;
+                    background-color: $color-yellow;
+                }
+    
+                &-green {
+                    @extend .badge;
+                    background-color: $color-green;
+                }
+    
+                &-sale {
+                    @extend .badge;
+                    background-color: $color-yellow;
+                }
+            }
+        }
+    }
+
+    .card-content {
+        padding-left: $content-padding;
+        padding-right: $content-padding;
+
+        & > *:not(:last-child) {
+            margin-bottom: $size-unit*2;
+        }
+
+        h2 {
+            margin-bottom: 0 !important;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            font-weight: bold;   
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            color: $color-grey;
+        }
+
+        .card-main-text {
+            color: $color-dark-grey;
+        }
+    }
+
+    .card-links {
+        padding-left: $content-padding;
+        padding-right: $content-padding;
+        padding-bottom: $content-padding;
+        margin-top: auto;
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            margin-right: $size-unit*4;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

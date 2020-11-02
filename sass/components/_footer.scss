@@ -1,0 +1,43 @@
+$navbar-bg-color: white;
+$navbar-text-color: $color-grey;
+$footer-vertical-paddings: 12px;
+$border-top-size: 1px;
+$border-top-color: $color-light-grey;
+
+footer {
+    width: 100%;
+    padding: $footer-vertical-paddings 0;
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
+    z-index: 99;
+    border-top: solid $border-top-size $border-top-color;
+    @include transition(0.3s);
+    
+    .container, .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 $column-gap;
+
+        .footer-copyrights {
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+
+            .nav-footer-items {
+
+                li {
+                    display: inline;
+                    margin: 10px;
+    
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                } 
+            }
+        }
+    }
+}

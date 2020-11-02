@@ -1,0 +1,93 @@
+$navbar-bg-color: $color-secondary;
+$navbar-text-color: white;
+$navbar-link-hover-color: $color-primary;
+$navbar-vertical-paddings: 22px;
+$navbar-mobile-breakpoint: $breakpoint-medium;
+$border-bottom-size: 1px;
+$border-bottom-color: lighten($color-secondary, 5%);
+
+.navbar {
+    width: 100%;
+    padding: $navbar-vertical-paddings 0;
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
+    border-bottom: solid $border-bottom-size $border-bottom-color;
+    z-index: 99;
+    @include transition(0.3s);
+    
+    .container, .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-container {
+            img {
+                height: 36px;
+                width: auto;
+                @include transition(0.3s);
+            }
+        }
+
+        .nav-item {
+            list-style-type: none;
+            display: inline;
+            margin-left: 20px;
+            cursor: pointer;
+
+            a {
+                font-weight: normal;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                color: inherit;
+
+                &:hover {
+                    color: $navbar-link-hover-color;
+                }
+            }
+        }
+
+        @media (max-width: $navbar-mobile-breakpoint) {
+            .nav-main-items {
+                position: absolute;
+                top: 0;
+                left: -100vw;
+                z-index: -1;
+                background-color: $navbar-bg-color;
+                font-size: 1.4rem;
+                @include transition(0.5s);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100vw;
+                height: 100vh;
+
+                .nav-item {
+                    list-style-type: none;
+                    flex-grow: 100%;
+                    margin: 20px;
+                }
+            }
+
+            .mobile-navigation-visible {
+                left: 0;
+                overflow:hidden;
+            }
+        }
+    }
+
+    &-sticky {
+        padding: $navbar-vertical-paddings - 6 0;
+
+        .container, .container-fluid {   
+            .logo-container {
+                img {
+                    height: 28px;
+                }
+            }
+        }
+    }
+    
+}

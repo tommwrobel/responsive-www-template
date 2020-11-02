@@ -1,0 +1,25 @@
+.color {
+    &-primary { color: $color-primary; }
+    &-dark-primary { color: darken($color-primary, 20%); }
+    &-light-primary { color: lighten($color-secondary, 20%); }
+    &-secondary { color: $color-secondary; }
+    &-dark-secondary { color: darken($color-secondary, 20%); }
+    &-light-secondary { color: lighten($color-secondary, 20%); }
+    &-white { color: white; }
+    &-black { color: black; }
+    &-grey { color: $color-grey; }
+    &-light-grey { color: $color-light-grey; }
+    &-dark-grey { color: $color-dark-grey; }
+}
+
+.bg {
+    &-primary { background-color: $color-primary; }
+    &-dark-primary { background-color: darken($color-primary, 20%); }
+    &-secondary { background-color: $color-secondary; }
+    &-dark-secondary { background-color: darken($color-secondary, 20%); }
+    &-white { background-color: white; }
+    &-black { background-color: black; }
+    &-grey { background-color: $color-grey; }
+    &-light-grey { background-color: $color-light-grey; }
+    &-dark-grey { background-color: $color-dark-grey; }
+}
