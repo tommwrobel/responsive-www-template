@@ -8,7 +8,7 @@
     &-white { color: white; }
     &-black { color: black; }
     &-grey { color: $color-grey; }
-    &-light-grey { color: $color-light-grey; }
+    &-light-grey { color: $color-light-grey !important; }
     &-dark-grey { color: $color-dark-grey; }
 }
 

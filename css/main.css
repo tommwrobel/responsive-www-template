@@ -16,11 +16,11 @@
 .color-black {
   color: black; }
 .color-grey {
-  color: grey; }
+  color: #b6b6b6; }
 .color-light-grey {
-  color: #ebebeb; }
+  color: #f2f2f2 !important; }
 .color-dark-grey {
-  color: #363636; }
+  color: #242424; }
 
 .bg-primary {
   background-color: #91d1dc; }
@@ -35,11 +35,11 @@
 .bg-black {
   background-color: black; }
 .bg-grey {
-  background-color: grey; }
+  background-color: #b6b6b6; }
 .bg-light-grey {
-  background-color: #ebebeb; }
+  background-color: #f2f2f2; }
 .bg-dark-grey {
-  background-color: #363636; }
+  background-color: #242424; }
 
 * {
   box-sizing: border-box; }
@@ -2300,8 +2300,7 @@ table {
 .container-fluid {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
-  overflow: hidden; }
+  padding: 0 15px; }
 
 .row {
   display: flex;
@@ -2475,6 +2474,9 @@ table {
 .flex-direction-column-reverse {
   flex-direction: column-reverse; }
 
+.offset-0 {
+  margin-left: 0%; }
+
 .offset-1 {
   margin-left: 8.3333333333%; }
 
@@ -2621,6 +2623,9 @@ table {
 
   .justify-content-lg-right {
     justify-content: right !important; }
+
+  .offset-lg-0 {
+    margin-left: 0%; }
 
   .offset-lg-1 {
     margin-left: 8.3333333333%; }
@@ -2792,6 +2797,9 @@ table {
   .justify-content-md-right {
     justify-content: right !important; }
 
+  .offset-md-0 {
+    margin-left: 0%; }
+
   .offset-md-1 {
     margin-left: 8.3333333333%; }
 
@@ -2962,38 +2970,41 @@ table {
   .justify-content-sm-right {
     justify-content: right !important; }
 
+  .offset-sm-0 {
+    margin-left: 0% !important; }
+
   .offset-sm-1 {
-    margin-left: 8.3333333333%; }
+    margin-left: 8.3333333333% !important; }
 
   .offset-sm-2 {
-    margin-left: 16.6666666667%; }
+    margin-left: 16.6666666667% !important; }
 
   .offset-sm-3 {
-    margin-left: 25%; }
+    margin-left: 25% !important; }
 
   .offset-sm-4 {
-    margin-left: 33.3333333333%; }
+    margin-left: 33.3333333333% !important; }
 
   .offset-sm-5 {
-    margin-left: 41.6666666667%; }
+    margin-left: 41.6666666667% !important; }
 
   .offset-sm-6 {
-    margin-left: 50%; }
+    margin-left: 50% !important; }
 
   .offset-sm-7 {
-    margin-left: 58.3333333333%; }
+    margin-left: 58.3333333333% !important; }
 
   .offset-sm-8 {
-    margin-left: 66.6666666667%; }
+    margin-left: 66.6666666667% !important; }
 
   .offset-sm-9 {
-    margin-left: 75%; }
+    margin-left: 75% !important; }
 
   .offset-sm-10 {
-    margin-left: 83.3333333333%; }
+    margin-left: 83.3333333333% !important; }
 
   .offset-sm-11 {
-    margin-left: 91.6666666667%; }
+    margin-left: 91.6666666667% !important; }
 
   .display-sm-none {
     display: none !important; }
@@ -3530,11 +3541,11 @@ html {
 
 body {
   font: normal 1rem "Rubik", Arial, Helvetica, sans-serif;
-  color: #363636;
+  color: #242424;
   font-size: 16px; }
 
 a {
-  color: grey; }
+  color: #b6b6b6; }
   a:hover {
     color: #2b2a3c;
     text-decoration: underline; }
@@ -3548,11 +3559,11 @@ p {
   .section::before {
     content: "";
     display: block;
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
   .section::after {
     content: "";
     display: block;
-    margin-top: 50px; }
+    margin-top: 100px; }
 
 .img-container, .post-thumbnail {
   width: 100%;
@@ -3680,7 +3691,7 @@ img {
       background-color: #16151e; }
   .btn-light {
     background-color: white;
-    color: #363636; }
+    color: #242424; }
     .btn-light:hover {
       color: #91d1dc;
       background-color: #f2f2f2; }
@@ -3700,8 +3711,8 @@ img {
       color: #20202d; }
   .btn-light-outlined {
     background: none;
-    border-color: #ebebeb;
-    color: #ebebeb; }
+    border-color: #f2f2f2;
+    color: #f2f2f2; }
     .btn-light-outlined:hover {
       border-color: #91d1dc;
       color: #91d1dc; }
@@ -3725,7 +3736,7 @@ img {
 
 .card {
   background-color: white;
-  border: solid 1px #ebebeb;
+  border: solid 1px #f2f2f2;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -3782,9 +3793,9 @@ img {
       font-weight: bold; }
     .card .card-content .card-subtitle {
       font-size: 0.9rem;
-      color: grey; }
+      color: #b6b6b6; }
     .card .card-content .card-main-text {
-      color: #363636; }
+      color: #242424; }
   .card .card-links {
     padding-left: 0;
     padding-right: 0;
@@ -3799,12 +3810,12 @@ img {
 
 .faq {
   width: 100%;
-  border: solid 1px #ebebeb;
+  border: solid 1px #f2f2f2;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px; }
   .faq .faq-title {
-    background-color: #f8f8f8;
+    background-color: white;
     cursor: pointer;
     padding: 15px;
     display: flex;
@@ -3838,7 +3849,7 @@ img {
       -moz-border-radius-bottomleft: 4px; }
     .faq .faq-title:hover {
       color: #91d1dc;
-      background-color: #ebebeb; }
+      background-color: #f2f2f2; }
     .faq .faq-title .faq_arrow {
       max-height: 1rem;
       margin-left: 1rem;
@@ -3861,9 +3872,9 @@ footer {
   width: 100%;
   padding: 12px 0;
   background-color: white;
-  color: grey;
+  color: #b6b6b6;
   z-index: 99;
-  border-top: solid 1px #ebebeb;
+  border-top: solid 1px #f2f2f2;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s; }
@@ -3889,10 +3900,10 @@ h1, h2, h3, h4 {
 .section-offer .row {
   margin-bottom: 30px; }
   .section-offer .row .txt-img:nth-child(odd) {
-    background-color: #ebebeb; }
+    background-color: #f2f2f2; }
 
 hr {
-  border: solid 1px #ebebeb; }
+  border: solid 1px #f2f2f2; }
 
 .offer-tiles .offer-tile {
   height: 200px;
@@ -3902,6 +3913,7 @@ hr {
   justify-content: center;
   align-items: center;
   background-color: #91d1dc;
+  overflow: hidden;
   cursor: pointer; }
   .offer-tiles .offer-tile:hover {
     background-color: #a8dbe3; }
@@ -3931,5 +3943,19 @@ hr {
 @media (max-width: 640px) {
   .offer-tiles .offer-tile {
     height: 100px; } }
+.offer-tiles .offer-description {
+  background-color: #f2f2f2;
+  padding: 30px; }
+
+.offer-main {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply; }
+  .offer-main h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+    color: #2b2a3c; }
 
 /*# sourceMappingURL=main.css.map */

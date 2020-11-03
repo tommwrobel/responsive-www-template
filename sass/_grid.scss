@@ -7,8 +7,7 @@
 .container-fluid {
     width: 100%;
     margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
+    padding: 0 $column-gap/2;
 }
 
 .row {
@@ -122,7 +121,7 @@ column-reverse;
     }
 }
 
-@for $i from 1 through $column-count - 1 {
+@for $i from 0 through $column-count - 1 {
     .offset-#{$i} {
         margin-left: 100%/$column-count * $i;
     }
@@ -155,7 +154,7 @@ column-reverse;
         }
     }
 
-    @for $i from 1 through$column-count - 1 {
+    @for $i from 0 through$column-count - 1 {
         .offset-lg-#{$i} {
             margin-left: 100%/$column-count * $i;
         }
@@ -195,7 +194,7 @@ column-reverse;
         }
     }
 
-    @for $i from 1 through$column-count - 1 {
+    @for $i from 0 through$column-count - 1 {
         .offset-md-#{$i} {
             margin-left: 100%/$column-count * $i;
         }
@@ -235,9 +234,9 @@ column-reverse;
         }
     }
 
-    @for $i from 1 through $column-count - 1 {
+    @for $i from 0 through $column-count - 1 {
         .offset-sm-#{$i} {
-            margin-left: 100%/$column-count * $i;
+            margin-left: 100%/$column-count * $i !important;
         }
     }
 
