@@ -16,11 +16,11 @@
 .color-black {
   color: black; }
 .color-grey {
-  color: #b6b6b6; }
+  color: #999999; }
 .color-light-grey {
   color: #f2f2f2 !important; }
 .color-dark-grey {
-  color: #242424; }
+  color: #444444; }
 
 .bg-primary {
   background-color: #91d1dc; }
@@ -35,11 +35,11 @@
 .bg-black {
   background-color: black; }
 .bg-grey {
-  background-color: #b6b6b6; }
+  background-color: #999999; }
 .bg-light-grey {
   background-color: #f2f2f2; }
 .bg-dark-grey {
-  background-color: #242424; }
+  background-color: #444444; }
 
 * {
   box-sizing: border-box; }
@@ -3541,11 +3541,11 @@ html {
 
 body {
   font: normal 1rem "Rubik", Arial, Helvetica, sans-serif;
-  color: #242424;
+  color: #444444;
   font-size: 16px; }
 
 a {
-  color: #b6b6b6; }
+  color: #999999; }
   a:hover {
     color: #2b2a3c;
     text-decoration: underline; }
@@ -3691,7 +3691,7 @@ img {
       background-color: #16151e; }
   .btn-light {
     background-color: white;
-    color: #242424; }
+    color: #444444; }
     .btn-light:hover {
       color: #91d1dc;
       background-color: #f2f2f2; }
@@ -3793,9 +3793,9 @@ img {
       font-weight: bold; }
     .card .card-content .card-subtitle {
       font-size: 0.9rem;
-      color: #b6b6b6; }
+      color: #999999; }
     .card .card-content .card-main-text {
-      color: #242424; }
+      color: #444444; }
   .card .card-links {
     padding-left: 0;
     padding-right: 0;
@@ -3872,7 +3872,7 @@ footer {
   width: 100%;
   padding: 12px 0;
   background-color: white;
-  color: #b6b6b6;
+  color: #999999;
   z-index: 99;
   border-top: solid 1px #f2f2f2;
   transition: 0.3s;
@@ -3947,15 +3947,26 @@ hr {
   background-color: #f2f2f2;
   padding: 30px; }
 
-.offer-main {
+.offer-main, .offer-main-secondary {
+  background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: multiply; }
-  .offer-main h2 {
+  .offer-main h2, .offer-main-secondary h2 {
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 800;
     color: #2b2a3c; }
+  .offer-main strong, .offer-main-secondary strong {
+    color: #444444; }
+  .offer-main-secondary {
+    background-color: #2b2a3c; }
+    .offer-main-secondary h2 {
+      color: #f2f2f2; }
+    .offer-main-secondary strong {
+      color: #f2f2f2; }
+    .offer-main-secondary p {
+      color: #999999; }
 
 /*# sourceMappingURL=main.css.map */

@@ -83,6 +83,7 @@ hr {
 
 .offer-main {
 
+    background-color: $color-light-grey;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
@@ -93,5 +94,26 @@ hr {
         line-height: 2.5rem;
         font-weight: 800;
         color: $color-secondary;
+    }
+
+    strong {
+        color: $color-dark-grey;
+    }
+
+    &-secondary {
+        @extend .offer-main;
+        background-color: $color-secondary;
+
+        h2 {
+            color: $color-light-grey;
+        }
+
+        strong {
+            color: $color-light-grey;
+        }
+
+        p {
+            color: $color-grey;
+        }
     }
 }
