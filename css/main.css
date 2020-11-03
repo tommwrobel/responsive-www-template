@@ -3555,6 +3555,7 @@ p {
   font-weight: 300; }
 
 .section {
+  position: relative;
   border: solid 1px transparent; }
   .section::before {
     content: "";
@@ -3578,6 +3579,10 @@ img {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px; }
+
+.fixed-anchor {
+  position: absolute;
+  top: -70px; }
 
 .navbar {
   width: 100%;
@@ -3916,7 +3921,8 @@ hr {
   overflow: hidden;
   cursor: pointer; }
   .offer-tiles .offer-tile:hover {
-    background-color: #a8dbe3; }
+    background-color: #a8dbe3;
+    text-decoration: none; }
     .offer-tiles .offer-tile:hover h2 {
       color: #2b2a3c; }
     .offer-tiles .offer-tile:hover .tile-number {

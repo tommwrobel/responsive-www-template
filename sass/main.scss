@@ -71,6 +71,7 @@ p {
 }
 
 .section {
+    position: relative;
     border: solid 1px transparent;
     
     &::before {
@@ -99,6 +100,11 @@ p {
 }
 
 img { @include border-radius($global-border-radius); }
+
+.fixed-anchor {
+    position: absolute;
+    top: -70px;
+}
 
 @import 'components/_navbar';
 @import 'components/_header';
