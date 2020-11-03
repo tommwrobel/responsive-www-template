@@ -3945,7 +3945,8 @@ hr {
     text-align: center;
     color: #3ba6b8;
     margin: 0;
-    z-index: 2; }
+    z-index: 2;
+    word-break: break-all; }
 @media (max-width: 640px) {
   .offer-tiles .offer-tile {
     height: 100px; } }
