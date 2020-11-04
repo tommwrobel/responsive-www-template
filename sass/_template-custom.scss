@@ -2,21 +2,8 @@ h1, h2, h3, h4 {
     color: $color-secondary;
 }
 
-.section-offer {
-    .row {
-        margin-bottom: $size-unit*6;
-        
-
-        .txt-img:nth-child(odd) {
-            background-color: $color-light-grey;
-        }
-
-        
-    }
-}
-
-hr {
-    border: solid 1px $color-light-grey;
+.container, .container-fluid {
+    position: relative;
 }
 
 .offer-tiles {
@@ -67,7 +54,6 @@ hr {
             color: darken($color-primary, 24%);
             margin: 0;
             z-index: 2;
-            word-break: break-all;
         }
     }
 
@@ -95,6 +81,7 @@ hr {
         line-height: 2.5rem;
         font-weight: 800;
         color: $color-secondary;
+        word-wrap: break-word;
     }
 
     strong {
@@ -115,6 +102,58 @@ hr {
 
         p {
             color: $color-grey;
+        }
+    }
+}
+
+.section-contact {
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 800;
+        color: $color-secondary;  
+    }
+
+    .contact-tile {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3, i {
+            color: $color-light-grey;
+            text-transform: uppercase;
+        }
+
+        i {
+            margin-bottom: $size-unit*4;
+        }
+        
+        @media (max-width: $breakpoint-small) {
+            & {
+                height: 200px;
+            }
+        }
+
+        &-primary {
+            @extend .contact-tile;
+            background-color: $color-primary;
+
+            &:hover {
+                background-color: lighten($color-primary, 6%);
+            }
+        }
+
+        &-secondary {
+            @extend .contact-tile;
+            background-color: $color-secondary;
+
+            &:hover {
+                background-color: lighten($color-secondary, 6%);
+            }
         }
     }
 }

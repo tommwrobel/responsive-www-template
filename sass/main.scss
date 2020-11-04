@@ -56,7 +56,7 @@ body {
     font-size: $default-font-size;
 }
 
-a {
+p a {
     color: $color-grey;
 
     &:hover {
@@ -84,6 +84,16 @@ p {
         content: "";
         display: block;
         margin-top: $size-unit*20;
+    }
+
+    @media (max-width: $breakpoint-small) {
+        &::before {
+            margin-bottom: $size-unit*10;
+        }
+    
+        &::after {
+            margin-top: $size-unit*10;
+        }
     }
 }
 

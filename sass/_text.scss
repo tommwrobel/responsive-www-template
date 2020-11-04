@@ -43,26 +43,26 @@ strong {
 
 @for $i from 3 through 20 {
     .t-#{$i*2}0 {
-        font-size: $i * 0.2rem;
-        line-height: $i * 0.2rem * 1.5;
+        font-size: $i * 0.2rem !important;
+        line-height: $i * 0.2rem * 1.5 !important;
     }
 
     .tt-#{$i*2}0 {
-        font-size: $i * 0.2rem;
-        line-height: $i * 0.2rem * 1.2;
+        font-size: $i * 0.2rem !important;
+        line-height: $i * 0.2rem * 1.2 !important;
     }
 }
 
 @media (max-width: $breakpoint-medium) {
     @for $i from 3 through 20 {
         .t-md-#{$i*2}0 {
-            font-size: $i * 0.2rem;
-            line-height: $i * 0.2rem * 1.5;
+            font-size: $i * 0.2rem !important;
+            line-height: $i * 0.2rem * 1.5 !important;
         }
 
         .tt-md-#{$i*2}0 {
-            font-size: $i * 0.2rem;
-            line-height: $i * 0.2rem * 1.2;
+            font-size: $i * 0.2rem !important;
+            line-height: $i * 0.2rem * 1.2 !important;
         }
     }
 }
@@ -70,13 +70,13 @@ strong {
 @media (max-width: $breakpoint-small) {
     @for $i from 3 through 20 {
         .t-sm-#{$i*2}0 {
-            font-size: $i * 0.2rem;
-            line-height: $i * 0.2rem * 1.5;
+            font-size: $i * 0.2rem !important;
+            line-height: $i * 0.2rem * 1.5 !important;
         }
 
         .tt-sm-#{$i*2}0 {
-            font-size: $i * 0.2rem;
-            line-height: $i * 0.2rem * 1.2;
+            font-size: $i * 0.2rem !important;
+            line-height: $i * 0.2rem * 1.2 !important;
         }
     }
 }

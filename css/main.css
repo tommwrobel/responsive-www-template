@@ -3100,437 +3100,437 @@ strong {
   font-weight: 600; }
 
 .t-60 {
-  font-size: 0.6rem;
-  line-height: 0.9rem; }
+  font-size: 0.6rem !important;
+  line-height: 0.9rem !important; }
 
 .tt-60 {
-  font-size: 0.6rem;
-  line-height: 0.72rem; }
+  font-size: 0.6rem !important;
+  line-height: 0.72rem !important; }
 
 .t-80 {
-  font-size: 0.8rem;
-  line-height: 1.2rem; }
+  font-size: 0.8rem !important;
+  line-height: 1.2rem !important; }
 
 .tt-80 {
-  font-size: 0.8rem;
-  line-height: 0.96rem; }
+  font-size: 0.8rem !important;
+  line-height: 0.96rem !important; }
 
 .t-100 {
-  font-size: 1rem;
-  line-height: 1.5rem; }
+  font-size: 1rem !important;
+  line-height: 1.5rem !important; }
 
 .tt-100 {
-  font-size: 1rem;
-  line-height: 1.2rem; }
+  font-size: 1rem !important;
+  line-height: 1.2rem !important; }
 
 .t-120 {
-  font-size: 1.2rem;
-  line-height: 1.8rem; }
+  font-size: 1.2rem !important;
+  line-height: 1.8rem !important; }
 
 .tt-120 {
-  font-size: 1.2rem;
-  line-height: 1.44rem; }
+  font-size: 1.2rem !important;
+  line-height: 1.44rem !important; }
 
 .t-140 {
-  font-size: 1.4rem;
-  line-height: 2.1rem; }
+  font-size: 1.4rem !important;
+  line-height: 2.1rem !important; }
 
 .tt-140 {
-  font-size: 1.4rem;
-  line-height: 1.68rem; }
+  font-size: 1.4rem !important;
+  line-height: 1.68rem !important; }
 
 .t-160 {
-  font-size: 1.6rem;
-  line-height: 2.4rem; }
+  font-size: 1.6rem !important;
+  line-height: 2.4rem !important; }
 
 .tt-160 {
-  font-size: 1.6rem;
-  line-height: 1.92rem; }
+  font-size: 1.6rem !important;
+  line-height: 1.92rem !important; }
 
 .t-180 {
-  font-size: 1.8rem;
-  line-height: 2.7rem; }
+  font-size: 1.8rem !important;
+  line-height: 2.7rem !important; }
 
 .tt-180 {
-  font-size: 1.8rem;
-  line-height: 2.16rem; }
+  font-size: 1.8rem !important;
+  line-height: 2.16rem !important; }
 
 .t-200 {
-  font-size: 2rem;
-  line-height: 3rem; }
+  font-size: 2rem !important;
+  line-height: 3rem !important; }
 
 .tt-200 {
-  font-size: 2rem;
-  line-height: 2.4rem; }
+  font-size: 2rem !important;
+  line-height: 2.4rem !important; }
 
 .t-220 {
-  font-size: 2.2rem;
-  line-height: 3.3rem; }
+  font-size: 2.2rem !important;
+  line-height: 3.3rem !important; }
 
 .tt-220 {
-  font-size: 2.2rem;
-  line-height: 2.64rem; }
+  font-size: 2.2rem !important;
+  line-height: 2.64rem !important; }
 
 .t-240 {
-  font-size: 2.4rem;
-  line-height: 3.6rem; }
+  font-size: 2.4rem !important;
+  line-height: 3.6rem !important; }
 
 .tt-240 {
-  font-size: 2.4rem;
-  line-height: 2.88rem; }
+  font-size: 2.4rem !important;
+  line-height: 2.88rem !important; }
 
 .t-260 {
-  font-size: 2.6rem;
-  line-height: 3.9rem; }
+  font-size: 2.6rem !important;
+  line-height: 3.9rem !important; }
 
 .tt-260 {
-  font-size: 2.6rem;
-  line-height: 3.12rem; }
+  font-size: 2.6rem !important;
+  line-height: 3.12rem !important; }
 
 .t-280 {
-  font-size: 2.8rem;
-  line-height: 4.2rem; }
+  font-size: 2.8rem !important;
+  line-height: 4.2rem !important; }
 
 .tt-280 {
-  font-size: 2.8rem;
-  line-height: 3.36rem; }
+  font-size: 2.8rem !important;
+  line-height: 3.36rem !important; }
 
 .t-300 {
-  font-size: 3rem;
-  line-height: 4.5rem; }
+  font-size: 3rem !important;
+  line-height: 4.5rem !important; }
 
 .tt-300 {
-  font-size: 3rem;
-  line-height: 3.6rem; }
+  font-size: 3rem !important;
+  line-height: 3.6rem !important; }
 
 .t-320 {
-  font-size: 3.2rem;
-  line-height: 4.8rem; }
+  font-size: 3.2rem !important;
+  line-height: 4.8rem !important; }
 
 .tt-320 {
-  font-size: 3.2rem;
-  line-height: 3.84rem; }
+  font-size: 3.2rem !important;
+  line-height: 3.84rem !important; }
 
 .t-340 {
-  font-size: 3.4rem;
-  line-height: 5.1rem; }
+  font-size: 3.4rem !important;
+  line-height: 5.1rem !important; }
 
 .tt-340 {
-  font-size: 3.4rem;
-  line-height: 4.08rem; }
+  font-size: 3.4rem !important;
+  line-height: 4.08rem !important; }
 
 .t-360 {
-  font-size: 3.6rem;
-  line-height: 5.4rem; }
+  font-size: 3.6rem !important;
+  line-height: 5.4rem !important; }
 
 .tt-360 {
-  font-size: 3.6rem;
-  line-height: 4.32rem; }
+  font-size: 3.6rem !important;
+  line-height: 4.32rem !important; }
 
 .t-380 {
-  font-size: 3.8rem;
-  line-height: 5.7rem; }
+  font-size: 3.8rem !important;
+  line-height: 5.7rem !important; }
 
 .tt-380 {
-  font-size: 3.8rem;
-  line-height: 4.56rem; }
+  font-size: 3.8rem !important;
+  line-height: 4.56rem !important; }
 
 .t-400 {
-  font-size: 4rem;
-  line-height: 6rem; }
+  font-size: 4rem !important;
+  line-height: 6rem !important; }
 
 .tt-400 {
-  font-size: 4rem;
-  line-height: 4.8rem; }
+  font-size: 4rem !important;
+  line-height: 4.8rem !important; }
 
 @media (max-width: 960px) {
   .t-md-60 {
-    font-size: 0.6rem;
-    line-height: 0.9rem; }
+    font-size: 0.6rem !important;
+    line-height: 0.9rem !important; }
 
   .tt-md-60 {
-    font-size: 0.6rem;
-    line-height: 0.72rem; }
+    font-size: 0.6rem !important;
+    line-height: 0.72rem !important; }
 
   .t-md-80 {
-    font-size: 0.8rem;
-    line-height: 1.2rem; }
+    font-size: 0.8rem !important;
+    line-height: 1.2rem !important; }
 
   .tt-md-80 {
-    font-size: 0.8rem;
-    line-height: 0.96rem; }
+    font-size: 0.8rem !important;
+    line-height: 0.96rem !important; }
 
   .t-md-100 {
-    font-size: 1rem;
-    line-height: 1.5rem; }
+    font-size: 1rem !important;
+    line-height: 1.5rem !important; }
 
   .tt-md-100 {
-    font-size: 1rem;
-    line-height: 1.2rem; }
+    font-size: 1rem !important;
+    line-height: 1.2rem !important; }
 
   .t-md-120 {
-    font-size: 1.2rem;
-    line-height: 1.8rem; }
+    font-size: 1.2rem !important;
+    line-height: 1.8rem !important; }
 
   .tt-md-120 {
-    font-size: 1.2rem;
-    line-height: 1.44rem; }
+    font-size: 1.2rem !important;
+    line-height: 1.44rem !important; }
 
   .t-md-140 {
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
+    font-size: 1.4rem !important;
+    line-height: 2.1rem !important; }
 
   .tt-md-140 {
-    font-size: 1.4rem;
-    line-height: 1.68rem; }
+    font-size: 1.4rem !important;
+    line-height: 1.68rem !important; }
 
   .t-md-160 {
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
+    font-size: 1.6rem !important;
+    line-height: 2.4rem !important; }
 
   .tt-md-160 {
-    font-size: 1.6rem;
-    line-height: 1.92rem; }
+    font-size: 1.6rem !important;
+    line-height: 1.92rem !important; }
 
   .t-md-180 {
-    font-size: 1.8rem;
-    line-height: 2.7rem; }
+    font-size: 1.8rem !important;
+    line-height: 2.7rem !important; }
 
   .tt-md-180 {
-    font-size: 1.8rem;
-    line-height: 2.16rem; }
+    font-size: 1.8rem !important;
+    line-height: 2.16rem !important; }
 
   .t-md-200 {
-    font-size: 2rem;
-    line-height: 3rem; }
+    font-size: 2rem !important;
+    line-height: 3rem !important; }
 
   .tt-md-200 {
-    font-size: 2rem;
-    line-height: 2.4rem; }
+    font-size: 2rem !important;
+    line-height: 2.4rem !important; }
 
   .t-md-220 {
-    font-size: 2.2rem;
-    line-height: 3.3rem; }
+    font-size: 2.2rem !important;
+    line-height: 3.3rem !important; }
 
   .tt-md-220 {
-    font-size: 2.2rem;
-    line-height: 2.64rem; }
+    font-size: 2.2rem !important;
+    line-height: 2.64rem !important; }
 
   .t-md-240 {
-    font-size: 2.4rem;
-    line-height: 3.6rem; }
+    font-size: 2.4rem !important;
+    line-height: 3.6rem !important; }
 
   .tt-md-240 {
-    font-size: 2.4rem;
-    line-height: 2.88rem; }
+    font-size: 2.4rem !important;
+    line-height: 2.88rem !important; }
 
   .t-md-260 {
-    font-size: 2.6rem;
-    line-height: 3.9rem; }
+    font-size: 2.6rem !important;
+    line-height: 3.9rem !important; }
 
   .tt-md-260 {
-    font-size: 2.6rem;
-    line-height: 3.12rem; }
+    font-size: 2.6rem !important;
+    line-height: 3.12rem !important; }
 
   .t-md-280 {
-    font-size: 2.8rem;
-    line-height: 4.2rem; }
+    font-size: 2.8rem !important;
+    line-height: 4.2rem !important; }
 
   .tt-md-280 {
-    font-size: 2.8rem;
-    line-height: 3.36rem; }
+    font-size: 2.8rem !important;
+    line-height: 3.36rem !important; }
 
   .t-md-300 {
-    font-size: 3rem;
-    line-height: 4.5rem; }
+    font-size: 3rem !important;
+    line-height: 4.5rem !important; }
 
   .tt-md-300 {
-    font-size: 3rem;
-    line-height: 3.6rem; }
+    font-size: 3rem !important;
+    line-height: 3.6rem !important; }
 
   .t-md-320 {
-    font-size: 3.2rem;
-    line-height: 4.8rem; }
+    font-size: 3.2rem !important;
+    line-height: 4.8rem !important; }
 
   .tt-md-320 {
-    font-size: 3.2rem;
-    line-height: 3.84rem; }
+    font-size: 3.2rem !important;
+    line-height: 3.84rem !important; }
 
   .t-md-340 {
-    font-size: 3.4rem;
-    line-height: 5.1rem; }
+    font-size: 3.4rem !important;
+    line-height: 5.1rem !important; }
 
   .tt-md-340 {
-    font-size: 3.4rem;
-    line-height: 4.08rem; }
+    font-size: 3.4rem !important;
+    line-height: 4.08rem !important; }
 
   .t-md-360 {
-    font-size: 3.6rem;
-    line-height: 5.4rem; }
+    font-size: 3.6rem !important;
+    line-height: 5.4rem !important; }
 
   .tt-md-360 {
-    font-size: 3.6rem;
-    line-height: 4.32rem; }
+    font-size: 3.6rem !important;
+    line-height: 4.32rem !important; }
 
   .t-md-380 {
-    font-size: 3.8rem;
-    line-height: 5.7rem; }
+    font-size: 3.8rem !important;
+    line-height: 5.7rem !important; }
 
   .tt-md-380 {
-    font-size: 3.8rem;
-    line-height: 4.56rem; }
+    font-size: 3.8rem !important;
+    line-height: 4.56rem !important; }
 
   .t-md-400 {
-    font-size: 4rem;
-    line-height: 6rem; }
+    font-size: 4rem !important;
+    line-height: 6rem !important; }
 
   .tt-md-400 {
-    font-size: 4rem;
-    line-height: 4.8rem; } }
+    font-size: 4rem !important;
+    line-height: 4.8rem !important; } }
 @media (max-width: 640px) {
   .t-sm-60 {
-    font-size: 0.6rem;
-    line-height: 0.9rem; }
+    font-size: 0.6rem !important;
+    line-height: 0.9rem !important; }
 
   .tt-sm-60 {
-    font-size: 0.6rem;
-    line-height: 0.72rem; }
+    font-size: 0.6rem !important;
+    line-height: 0.72rem !important; }
 
   .t-sm-80 {
-    font-size: 0.8rem;
-    line-height: 1.2rem; }
+    font-size: 0.8rem !important;
+    line-height: 1.2rem !important; }
 
   .tt-sm-80 {
-    font-size: 0.8rem;
-    line-height: 0.96rem; }
+    font-size: 0.8rem !important;
+    line-height: 0.96rem !important; }
 
   .t-sm-100 {
-    font-size: 1rem;
-    line-height: 1.5rem; }
+    font-size: 1rem !important;
+    line-height: 1.5rem !important; }
 
   .tt-sm-100 {
-    font-size: 1rem;
-    line-height: 1.2rem; }
+    font-size: 1rem !important;
+    line-height: 1.2rem !important; }
 
   .t-sm-120 {
-    font-size: 1.2rem;
-    line-height: 1.8rem; }
+    font-size: 1.2rem !important;
+    line-height: 1.8rem !important; }
 
   .tt-sm-120 {
-    font-size: 1.2rem;
-    line-height: 1.44rem; }
+    font-size: 1.2rem !important;
+    line-height: 1.44rem !important; }
 
   .t-sm-140 {
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
+    font-size: 1.4rem !important;
+    line-height: 2.1rem !important; }
 
   .tt-sm-140 {
-    font-size: 1.4rem;
-    line-height: 1.68rem; }
+    font-size: 1.4rem !important;
+    line-height: 1.68rem !important; }
 
   .t-sm-160 {
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
+    font-size: 1.6rem !important;
+    line-height: 2.4rem !important; }
 
   .tt-sm-160 {
-    font-size: 1.6rem;
-    line-height: 1.92rem; }
+    font-size: 1.6rem !important;
+    line-height: 1.92rem !important; }
 
   .t-sm-180 {
-    font-size: 1.8rem;
-    line-height: 2.7rem; }
+    font-size: 1.8rem !important;
+    line-height: 2.7rem !important; }
 
   .tt-sm-180 {
-    font-size: 1.8rem;
-    line-height: 2.16rem; }
+    font-size: 1.8rem !important;
+    line-height: 2.16rem !important; }
 
   .t-sm-200 {
-    font-size: 2rem;
-    line-height: 3rem; }
+    font-size: 2rem !important;
+    line-height: 3rem !important; }
 
   .tt-sm-200 {
-    font-size: 2rem;
-    line-height: 2.4rem; }
+    font-size: 2rem !important;
+    line-height: 2.4rem !important; }
 
   .t-sm-220 {
-    font-size: 2.2rem;
-    line-height: 3.3rem; }
+    font-size: 2.2rem !important;
+    line-height: 3.3rem !important; }
 
   .tt-sm-220 {
-    font-size: 2.2rem;
-    line-height: 2.64rem; }
+    font-size: 2.2rem !important;
+    line-height: 2.64rem !important; }
 
   .t-sm-240 {
-    font-size: 2.4rem;
-    line-height: 3.6rem; }
+    font-size: 2.4rem !important;
+    line-height: 3.6rem !important; }
 
   .tt-sm-240 {
-    font-size: 2.4rem;
-    line-height: 2.88rem; }
+    font-size: 2.4rem !important;
+    line-height: 2.88rem !important; }
 
   .t-sm-260 {
-    font-size: 2.6rem;
-    line-height: 3.9rem; }
+    font-size: 2.6rem !important;
+    line-height: 3.9rem !important; }
 
   .tt-sm-260 {
-    font-size: 2.6rem;
-    line-height: 3.12rem; }
+    font-size: 2.6rem !important;
+    line-height: 3.12rem !important; }
 
   .t-sm-280 {
-    font-size: 2.8rem;
-    line-height: 4.2rem; }
+    font-size: 2.8rem !important;
+    line-height: 4.2rem !important; }
 
   .tt-sm-280 {
-    font-size: 2.8rem;
-    line-height: 3.36rem; }
+    font-size: 2.8rem !important;
+    line-height: 3.36rem !important; }
 
   .t-sm-300 {
-    font-size: 3rem;
-    line-height: 4.5rem; }
+    font-size: 3rem !important;
+    line-height: 4.5rem !important; }
 
   .tt-sm-300 {
-    font-size: 3rem;
-    line-height: 3.6rem; }
+    font-size: 3rem !important;
+    line-height: 3.6rem !important; }
 
   .t-sm-320 {
-    font-size: 3.2rem;
-    line-height: 4.8rem; }
+    font-size: 3.2rem !important;
+    line-height: 4.8rem !important; }
 
   .tt-sm-320 {
-    font-size: 3.2rem;
-    line-height: 3.84rem; }
+    font-size: 3.2rem !important;
+    line-height: 3.84rem !important; }
 
   .t-sm-340 {
-    font-size: 3.4rem;
-    line-height: 5.1rem; }
+    font-size: 3.4rem !important;
+    line-height: 5.1rem !important; }
 
   .tt-sm-340 {
-    font-size: 3.4rem;
-    line-height: 4.08rem; }
+    font-size: 3.4rem !important;
+    line-height: 4.08rem !important; }
 
   .t-sm-360 {
-    font-size: 3.6rem;
-    line-height: 5.4rem; }
+    font-size: 3.6rem !important;
+    line-height: 5.4rem !important; }
 
   .tt-sm-360 {
-    font-size: 3.6rem;
-    line-height: 4.32rem; }
+    font-size: 3.6rem !important;
+    line-height: 4.32rem !important; }
 
   .t-sm-380 {
-    font-size: 3.8rem;
-    line-height: 5.7rem; }
+    font-size: 3.8rem !important;
+    line-height: 5.7rem !important; }
 
   .tt-sm-380 {
-    font-size: 3.8rem;
-    line-height: 4.56rem; }
+    font-size: 3.8rem !important;
+    line-height: 4.56rem !important; }
 
   .t-sm-400 {
-    font-size: 4rem;
-    line-height: 6rem; }
+    font-size: 4rem !important;
+    line-height: 6rem !important; }
 
   .tt-sm-400 {
-    font-size: 4rem;
-    line-height: 4.8rem; } }
+    font-size: 4rem !important;
+    line-height: 4.8rem !important; } }
 * {
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -3544,9 +3544,9 @@ body {
   color: #444444;
   font-size: 16px; }
 
-a {
+p a {
   color: #999999; }
-  a:hover {
+  p a:hover {
     color: #2b2a3c;
     text-decoration: underline; }
 
@@ -3565,6 +3565,11 @@ p {
     content: "";
     display: block;
     margin-top: 100px; }
+  @media (max-width: 640px) {
+    .section::before {
+      margin-bottom: 50px; }
+    .section::after {
+      margin-top: 50px; } }
 
 .img-container, .post-thumbnail {
   width: 100%;
@@ -3902,13 +3907,8 @@ footer {
 h1, h2, h3, h4 {
   color: #2b2a3c; }
 
-.section-offer .row {
-  margin-bottom: 30px; }
-  .section-offer .row .txt-img:nth-child(odd) {
-    background-color: #f2f2f2; }
-
-hr {
-  border: solid 1px #f2f2f2; }
+.container, .container-fluid {
+  position: relative; }
 
 .offer-tiles .offer-tile {
   height: 200px;
@@ -3945,8 +3945,7 @@ hr {
     text-align: center;
     color: #3ba6b8;
     margin: 0;
-    z-index: 2;
-    word-break: break-all; }
+    z-index: 2; }
 @media (max-width: 640px) {
   .offer-tiles .offer-tile {
     height: 100px; } }
@@ -3964,7 +3963,8 @@ hr {
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 800;
-    color: #2b2a3c; }
+    color: #2b2a3c;
+    word-wrap: break-word; }
   .offer-main strong, .offer-main-secondary strong {
     color: #444444; }
   .offer-main-secondary {
@@ -3975,5 +3975,34 @@ hr {
       color: #f2f2f2; }
     .offer-main-secondary p {
       color: #999999; }
+
+.section-contact h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  color: #2b2a3c; }
+.section-contact .contact-tile, .section-contact .contact-tile-primary, .section-contact .contact-tile-secondary {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .section-contact .contact-tile h3, .section-contact .contact-tile-primary h3, .section-contact .contact-tile-secondary h3, .section-contact .contact-tile i, .section-contact .contact-tile-primary i, .section-contact .contact-tile-secondary i {
+    color: #f2f2f2;
+    text-transform: uppercase; }
+  .section-contact .contact-tile i, .section-contact .contact-tile-primary i, .section-contact .contact-tile-secondary i {
+    margin-bottom: 20px; }
+  @media (max-width: 640px) {
+    .section-contact .contact-tile, .section-contact .contact-tile-primary, .section-contact .contact-tile-secondary {
+      height: 200px; } }
+  .section-contact .contact-tile-primary {
+    background-color: #91d1dc; }
+    .section-contact .contact-tile-primary:hover {
+      background-color: #a8dbe3; }
+  .section-contact .contact-tile-secondary {
+    background-color: #2b2a3c; }
+    .section-contact .contact-tile-secondary:hover {
+      background-color: #38374e; }
 
 /*# sourceMappingURL=main.css.map */
