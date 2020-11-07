@@ -122,6 +122,8 @@ h1, h2, h3, h4 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
+        @include border-radius($global-border-radius);
 
         h3, i {
             color: $color-light-grey;
